@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Berita — MAUJERSEY</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { display: ["Poppins", "sans-serif"] },
+          boxShadow: { glow: "0 0 25px rgba(34, 211, 238, .25)" }
+        }
+      }
+    }
+  </script>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+
+<body class="bg-slate-950 text-white font-display">
+
+  <!-- Tombol Kembali ke Home -->
+  <div class="container mx-auto px-4 py-4">
+    <a href="index.html"
+       class="inline-flex items-center gap-2 text-cyan-200 font-semibold hover:text-cyan-300 transition">
+      <!-- Icon panah ← -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+      Kembali ke Home
+    </a>
+  </div>
+
+  <!-- Detail Berita -->
+  <section class="container mx-auto px-4 py-10 max-w-4xl">
+    <h1 class="text-4xl md:text-5xl font-black glow-text text-white mb-4" data-aos="fade-up">
+      Jersey Tim Futsal Baru Rilis!
+    </h1>
+
+    <div class="flex flex-wrap items-center gap-4 text-sm text-slate-300 mb-6" data-aos="fade-up" data-aos-delay="100">
+      <span>🗓 20 Januari 2026</span>
+      <span>•</span>
+      <span class="text-cyan-200 font-semibold">Futsal</span>
+      <span>•</span>
+      <span>Admin MAUJERSEY</span>
+    </div>
+
+    <div class="mb-8" data-aos="zoom-in" data-aos-delay="150">
+      <img src="assets/img/news1.jpg" alt="Berita Utama" class="w-full rounded-2xl shadow-glow">
+    </div>
+
+    <div class="prose prose-invert text-slate-300 max-w-none" data-aos="fade-up" data-aos-delay="200">
+      <p>Tim Futsal X mendapatkan jersey custom terbaru dari MAUJERSEY. Dengan desain modern dan bahan premium, tim tampil maksimal.</p>
+      <p>Selain itu, jersey ini dilengkapi dengan logo sponsor dan nomor pemain yang presisi. Tim merasa jersey ini nyaman dipakai selama pertandingan dan latihan.</p>
+      <h3>Detail Produk:</h3>
+      <ul>
+        <li>Bahan: Dryfit Premium</li>
+        <li>Desain: Full Custom</li>
+        <li>Warna: Bisa dipilih sesuai permintaan</li>
+        <li>Finishing: Jahitan rapi, tahan lama</li>
+      </ul>
+      <p>Untuk pemesanan jersey custom, tim atau individu dapat menghubungi MAUJERSEY melalui tombol konsultasi di bawah.</p>
+    </div>
+
+    <div class="mt-10 flex flex-wrap gap-4">
+      <a href="#contact" class="px-6 py-3 rounded-full bg-cyan-300 text-slate-950 font-semibold hover:bg-cyan-200 transition shadow-glow">
+        Konsultasi Sekarang
+      </a>
+    </div>
+  </section>
+
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+</body>
+</html>

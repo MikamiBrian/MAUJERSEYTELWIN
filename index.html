@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAUJERSEY — Custom Jersey Sport</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config (CDN mode) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ["Poppins", "sans-serif"],
+          },
+          boxShadow: {
+            glow: "0 0 30px rgba(34, 211, 238, .25)",
+            glow2: "0 0 55px rgba(34, 211, 238, .25)"
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Glow helpers */
+    .glow-text {
+      text-shadow:
+        0 0 6px rgba(34, 211, 238, .55),
+        0 0 20px rgba(34, 211, 238, .35);
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+  </style>
+</head>
+
+<body class="font-display bg-slate-950 text-white overflow-x-hidden">
+
+  <!-- BG Effects -->
+  <div class="pointer-events-none fixed inset-0 -z-10">
+    <div class="absolute -top-48 left-1/2 h-[460px] w-[460px] -translate-x-1/2 rounded-full bg-cyan-500/20 blur-3xl">
+    </div>
+    <div class="absolute top-28 right-[-140px] h-[420px] w-[420px] rounded-full bg-blue-500/10 blur-3xl"></div>
+    <div class="absolute bottom-[-220px] left-[-160px] h-[520px] w-[520px] rounded-full bg-indigo-500/10 blur-3xl">
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-slate-950/60 backdrop-blur-xl">
+  <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+
+    <!-- Logo -->
+    <a href="#home" class="flex items-center gap-3">
+      <div class="h-10 w-10 rounded-2xl border border-cyan-300/30 bg-cyan-300/10 shadow-glow flex items-center justify-center overflow-hidden">
+        <img src="assets/img/logo.png" alt="MAUJERSEY Logo" class="h-9 w-9 object-contain" />
+      </div>
+      <div class="leading-tight">
+        <p class="text-lg font-extrabold tracking-tight">MAUJERSEY</p>
+        <p class="text-xs text-slate-400 -mt-1">Custom Sport Apparel</p>
+      </div>
+    </a>
+
+    <!-- Desktop menu -->
+    <nav class="hidden md:flex items-center gap-8 text-sm text-slate-300">
+      <a href="#home" class="text-cyan-200 font-semibold">Home</a>
+      <a href="#katalog" class="hover:text-cyan-200 transition">Katalog</a>
+      <a href="berita.html" class="hover:text-cyan-200 transition">Berita</a>
+      <a href="#contact" class="hover:text-cyan-200 transition">Contact</a>
+    </nav>
+
+    <!-- CTA -->
+    <div class="hidden md:flex gap-3">
+      <a href="#contact"
+        class="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
+        Login
+      </a>
+    </div>
+
+    <!-- Mobile button -->
+    <button id="btnMobile"
+      class="md:hidden inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-3 py-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="md:hidden hidden border-t border-white/5 bg-slate-950/90 backdrop-blur-xl">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex flex-col gap-3 text-sm text-slate-300">
+      <a href="#home" class="text-cyan-200 font-semibold">Home</a>
+      <a href="#katalog" class="hover:text-cyan-200 transition">Katalog</a>
+      <a href="#berita" class="hover:text-cyan-200 transition">Berita</a>
+      <a href="#contact" class="hover:text-cyan-200 transition">Contact</a>
+      <a href="#contact"
+        class="mt-2 inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
+        Order Sekarang
+      </a>
+    </div>
+  </div>
+</header>
+
+
+  <!-- HERO -->
+  <main class="mx-auto max-w-6xl px-4">
+    <section class="py-16 md:py-24">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+
+        <!-- Left -->
+        <div>
+          <div
+            class="inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-xs text-cyan-200">
+            <span class="h-2 w-2 rounded-full bg-cyan-300 shadow-glow"></span>
+            Produksi Rapi • Custom Desain • Fast Response
+          </div>
+
+          <h1 class="mt-6 text-4xl md:text-5xl font-black tracking-tight leading-tight glow-text">
+            Jersey custom yang bikin tim kamu tampil
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-400">PRO</span>
+          </h1>
+
+          <p class="mt-4 text-slate-300 leading-relaxed">
+            MAUJERSEY melayani pembuatan jersey custom untuk
+            <span class="text-cyan-200 font-semibold">Futsal</span>,
+            <span class="text-cyan-200 font-semibold">Basket</span>,
+            <span class="text-cyan-200 font-semibold">Badminton</span>,
+            <span class="text-cyan-200 font-semibold">Sepeda</span>, dan
+            <span class="text-cyan-200 font-semibold">Esport</span>.
+            Desain bebas, bahan premium, warna tajam, dan finishing rapi.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#katalog"
+              class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
+              Lihat Katalog
+            </a>
+            <a href="#contact"
+              class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-cyan-200 border border-cyan-300/40 hover:border-cyan-200 hover:bg-cyan-300/10 transition">
+              Konsultasi
+            </a>
+          </div>
+
+          <div class="mt-10 grid grid-cols-3 gap-3">
+            <div class="glass rounded-2xl p-4">
+              <p class="text-xl font-extrabold text-cyan-200">5–10</p>
+              <p class="text-xs text-slate-400">Hari Produksi</p>
+            </div>
+            <div class="glass rounded-2xl p-4">
+              <p class="text-xl font-extrabold text-cyan-200">Full</p>
+              <p class="text-xs text-slate-400">Custom Design</p>
+            </div>
+            <div class="glass rounded-2xl p-4">
+              <p class="text-xl font-extrabold text-cyan-200">QC</p>
+              <p class="text-xs text-slate-400">Finishing Rapi</p>
+            </div>
+          </div>
+        </div>
+
+  <!-- RIGHT CARD -->
+  <div class="relative max-w-md mx-auto glass rounded-3xl p-6 shadow-glow2">
+    <div class="rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-white/10 p-6">
+
+      <div class="flex items-center justify-between mb-4">
+        <p class="text-sm text-slate-400">PREVIEW DESIGN</p>
+        <p class="text-xs text-cyan-200 font-bold tracking-wide">MAUJERSEY SPORT</p>
+      </div>
+
+      <!-- Swiper utama -->
+      <div class="swiper mySwiperMain h-60 md:h-72 lg:h-80 mb-4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex items-center justify-center">
+            <img src="assets/img/Produk1.png" alt="Jersey 1" class="h-full object-contain rounded-2xl">
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <img src="assets/img/Produk2.png" alt="Jersey 2" class="h-full object-contain rounded-2xl">
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <img src="assets/img/Produk3.png" alt="Jersey 3" class="h-full object-contain rounded-2xl">
+          </div>
+        </div>
+      </div>
+
+      <!-- Thumbnail Swiper -->
+      <div class="swiper mySwiperThumbs h-16 md:h-20">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide h-16 md:h-20 p-1">
+            <img src="assets/img/Produk1.png" alt="Thumb 1" class="h-full w-full object-contain rounded-lg cursor-pointer">
+          </div>
+          <div class="swiper-slide h-16 md:h-20 p-1">
+            <img src="assets/img/Produk2.png" alt="Thumb 2" class="h-full w-full object-contain rounded-lg cursor-pointer">
+          </div>
+          <div class="swiper-slide h-16 md:h-20 p-1">
+            <img src="assets/img/Produk3.png" alt="Thumb 3" class="h-full w-full object-contain rounded-lg cursor-pointer">
+          </div>
+        </div>
+      </div>
+
+      <!-- Info Jersey -->
+      <div class="mt-4 flex justify-between items-center">
+        <div>
+          <p class="text-lg font-extrabold text-white">Jersey Custom</p>
+          <p class="text-xs text-slate-400">Nama • Nomor • Logo Tim • Sponsor</p>
+        </div>
+
+        <!-- Tombol ke Katalog -->
+        <a href="#katalog"
+          class="h-10 w-10 rounded-2xl bg-cyan-300/20 border border-cyan-300/30 shadow-glow 
+                  flex items-center justify-center hover:bg-cyan-200/30 transition group">
+          <span class="text-cyan-200 font-black text-sm transition-transform group-hover:translate-x-1">
+            →
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiperThumbs = new Swiper(".mySwiperThumbs", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        watchSlidesProgress: true,
+        breakpoints: {
+          640: { slidesPerView: 3 },
+          1024: { slidesPerView: 4 },
+        },
+      });
+
+      const swiperMain = new Swiper(".mySwiperMain", {
+        loop: true,
+        spaceBetween: 10,
+        autoplay: { delay: 3500, disableOnInteraction: false },
+        thumbs: {
+          swiper: swiperThumbs,
+        },
+      });
+    </script>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about section pt-16 md:pt-24">
+
+      <!-- Section Title -->
+      <div class="container mx-auto text-center mb-12" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-black glow-text">About</h2>
+      </div>
+
+      <!-- About Content -->
+      <div class="container mx-auto grid md:grid-cols-2 gap-10 items-center" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Text Content (Kiri) -->
+        <div data-aos="fade-right" data-aos-delay="150">
+          <span class="text-cyan-200 font-semibold uppercase text-sm">Hello there</span>
+          <h2 class="mt-3 text-2xl md:text-3xl font-extrabold text-white leading-snug">
+            Hi, we’re Maujersey — your trusted partner for premium custom sports jerseys
+          </h2>
+          <p class="mt-4 text-slate-300 leading-relaxed">
+            Maujersey adalah penyedia jersey olahraga custom yang berfokus pada kualitas, kenyamanan, dan desain. 
+            Kami hadir untuk membantu tim, komunitas, dan individu mendapatkan jersey terbaik yang mencerminkan 
+            identitas dan semangat kebersamaan.
+          </p>
+          <p class="mt-3 text-slate-300 leading-relaxed">
+            Dengan proses produksi yang rapi, detail presisi, serta material yang tahan lama, setiap jersey yang kami 
+            buat bukan hanya sekadar pakaian, tetapi representasi identitas, semangat kebersamaan, dan karakter tim Anda.
+          </p>
+        </div>
+
+        <!-- Image Content (Kanan) -->
+        <div class="flex justify-center md:justify-end" data-aos="zoom-in" data-aos-delay="250">
+          <img src="assets/img/Produk1.png" alt="Portrait of Alex" class="rounded-2xl w-full max-w-sm shadow-lg">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-14">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-black glow-text">Services</h2>
+        <p class="mt-3 text-slate-300">Mulai dari desain sampai produksi. Bisa satuan atau tim/komunitas.</p>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="glass rounded-3xl p-6">
+          <p class="text-sm text-cyan-200 font-bold">01</p>
+          <h3 class="mt-3 text-xl font-extrabold">Custom Desain</h3>
+          <p class="mt-2 text-slate-300 text-sm">Request desain bebas. Bisa kirim referensi atau dibuatkan dari nol.</p>
+        </div>
+        <div class="glass rounded-3xl p-6">
+          <p class="text-sm text-cyan-200 font-bold">02</p>
+          <h3 class="mt-3 text-xl font-extrabold">Bahan Premium</h3>
+          <p class="mt-2 text-slate-300 text-sm">Dryfit / Milano / material sport yang adem dan nyaman dipakai.</p>
+        </div>
+        <div class="glass rounded-3xl p-6">
+          <p class="text-sm text-cyan-200 font-bold">03</p>
+          <h3 class="mt-3 text-xl font-extrabold">Sublim Full Print</h3>
+          <p class="mt-2 text-slate-300 text-sm">Warna tajam, detail presisi, dan tidak gampang pudar.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- STATS -->
+  <section id="stats" class="stats section py-16 bg-slate-900/50">
+    <div class="container mx-auto" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="md:flex md:items-center md:justify-between gap-8">
+
+        <!-- Avatars -->
+        <div class="flex gap-2 mb-8 md:mb-0" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/img/person/person-m-2.webp" alt="Avatar 1" class="h-12 w-12 rounded-full border-2 border-cyan-300/30" loading="lazy">
+          <img src="assets/img/person/person-m-3.webp" alt="Avatar 2" class="h-12 w-12 rounded-full border-2 border-cyan-300/30" loading="lazy">
+          <img src="assets/img/person/person-f-5.webp" alt="Avatar 3" class="h-12 w-12 rounded-full border-2 border-cyan-300/30" loading="lazy">
+          <img src="assets/img/person/person-m-5.webp" alt="Avatar 4" class="h-12 w-12 rounded-full border-2 border-cyan-300/30" loading="lazy">
+        </div>
+
+        <!-- Counters -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center md:text-center">
+
+          <!-- Counter 1 -->
+          <div data-aos="fade-up" data-aos-delay="300">
+            <h2 class="text-3xl font-extrabold text-cyan-200">
+              <span data-purecounter-start="0" data-purecounter-end="185" data-purecounter-duration="1" class="purecounter">185</span>+
+            </h2>
+            <p class="text-slate-300 mt-1">Kepercayaan Pelanggan</p>
+          </div>
+
+          <!-- Counter 2 -->
+          <div data-aos="fade-up" data-aos-delay="400">
+            <h2 class="text-3xl font-extrabold text-cyan-200">
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter">32</span>K
+            </h2>
+            <p class="text-slate-300 mt-1">Pesanan Terselesaikan</p>
+          </div>
+
+          <!-- Counter 3 -->
+          <div data-aos="fade-up" data-aos-delay="500">
+            <h2 class="text-3xl font-extrabold text-cyan-200">
+              <span data-purecounter-start="0" data-purecounter-end="128" data-purecounter-duration="1" class="purecounter">128</span>+
+            </h2>
+            <p class="text-slate-300 mt-1">Klien Puas</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  
+  <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.5.0/dist/purecounter_vanilla.js"></script>
+  <script>
+    new PureCounter();
+  </script>
+
+  <!-- TESTIMONI -->
+  <section id="testimoni" class="py-14 bg-slate-900/50">
+    <div class="text-center max-w-2xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-black glow-text">Testimoni</h2>
+      <p class="mt-3 text-slate-300">Lihat apa kata pelanggan kami tentang jersey custom MAUJERSEY.</p>
+    </div>
+
+    <div class="mt-10 max-w-6xl mx-auto relative">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <!-- Testimoni 1 -->
+          <div class="swiper-slide glass rounded-3xl p-6 text-center">
+            <div class="flex justify-center mb-4">
+              <img src="assets/img/user1.jpg" alt="User 1" class="h-16 w-16 rounded-full border-2 border-cyan-300/30">
+            </div>
+            <p class="text-slate-300 italic">"Jersey tim kami terlihat profesional dan nyaman dipakai. Produksi cepat dan desain sesuai permintaan!"</p>
+            <p class="mt-4 text-cyan-200 font-bold">— Ahmad, Kapten Futsal</p>
+          </div>
+
+          <!-- Testimoni 2 -->
+          <div class="swiper-slide glass rounded-3xl p-6 text-center">
+            <div class="flex justify-center mb-4">
+              <img src="assets/img/user2.jpg" alt="User 2" class="h-16 w-16 rounded-full border-2 border-cyan-300/30">
+            </div>
+            <p class="text-slate-300 italic">"Desain sesuai harapan, warna tajam, dan bahan sangat nyaman untuk latihan dan pertandingan."</p>
+            <p class="mt-4 text-cyan-200 font-bold">— Rina, Atlet Basket</p>
+          </div>
+
+          <!-- Testimoni 3 -->
+          <div class="swiper-slide glass rounded-3xl p-6 text-center">
+            <div class="flex justify-center mb-4">
+              <img src="assets/img/user3.jpg" alt="User 3" class="h-16 w-16 rounded-full border-2 border-cyan-300/30">
+            </div>
+            <p class="text-slate-300 italic">"Pelayanan fast response, desain bebas, dan finishing rapi. Sangat puas dengan MAUJERSEY!"</p>
+            <p class="mt-4 text-cyan-200 font-bold">— Dimas, Coach Esport</p>
+          </div>
+
+          <!-- Testimoni 4 -->
+          <div class="swiper-slide glass rounded-3xl p-6 text-center">
+            <div class="flex justify-center mb-4">
+              <img src="assets/img/user4.jpg" alt="User 4" class="h-16 w-16 rounded-full border-2 border-cyan-300/30">
+            </div>
+            <p class="text-slate-300 italic">"Bahan jersey sangat nyaman, warna sesuai desain, dan pengiriman tepat waktu."</p>
+            <p class="mt-4 text-cyan-200 font-bold">— Sari, Atlet Badminton</p>
+          </div>
+
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Swiper JS & CSS (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,                  
+      slidesPerView: 1,
+      spaceBetween: 20,
+      autoplay: {
+        delay: 3000,               
+        disableOnInteraction: false, 
+      },
+      breakpoints: {
+        640: { 
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: { 
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,      
+      },
+      slideToClickedSlide: true,
+    });
+  </script>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/5">
+    <div class="mx-auto max-w-6xl px-4 py-10 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
+      <p class="text-sm text-slate-400">
+        © <span class="text-white font-semibold">MAUJERSEY</span>. All Rights Reserved.
+      </p>
+      <div class="flex gap-4 text-sm">
+        <a class="text-slate-300 hover:text-cyan-200 transition" href="#katalog">Katalog</a>
+        <a class="text-slate-300 hover:text-cyan-200 transition" href="#services">Services</a>
+        <a class="text-slate-300 hover:text-cyan-200 transition" href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const btnMobile = document.getElementById("btnMobile");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    btnMobile.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+
+</html>
