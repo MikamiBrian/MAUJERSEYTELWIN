@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAUJERSEY — Contact</title>
+
+  <link rel="icon" href="assets/img/logo.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config (CDN mode) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ["Poppins", "sans-serif"],
+          },
+          boxShadow: {
+            glow: "0 0 30px rgba(34, 211, 238, .25)",
+            glow2: "0 0 55px rgba(34, 211, 238, .25)"
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Glow helpers */
+    .glow-text {
+      text-shadow:
+        0 0 6px rgba(34, 211, 238, .55),
+        0 0 20px rgba(34, 211, 238, .35);
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+  </style>
+</head>
+
+<body class="font-display bg-slate-950 text-white overflow-x-hidden">
+
+  <!-- BG Effects -->
+  <div class="pointer-events-none fixed inset-0 -z-10">
+    <div class="absolute -top-48 left-1/2 h-[460px] w-[460px] -translate-x-1/2 rounded-full bg-cyan-500/20 blur-3xl">
+    </div>
+    <div class="absolute top-28 right-[-140px] h-[420px] w-[420px] rounded-full bg-blue-500/10 blur-3xl"></div>
+    <div class="absolute bottom-[-220px] left-[-160px] h-[520px] w-[520px] rounded-full bg-indigo-500/10 blur-3xl">
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-slate-950/60 backdrop-blur-xl">
+  <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-3">
+      <div
+        class="h-10 w-10 rounded-2xl border border-cyan-300/30 bg-cyan-300/10 shadow-glow flex items-center justify-center overflow-hidden">
+        <img src="assets/img/logo.png" alt="MAUJERSEY Logo" class="h-9 w-9 object-contain" />
+      </div>
+      <div class="leading-tight">
+        <p class="text-lg font-extrabold tracking-tight">MAUJERSEY</p>
+        <p class="text-xs text-slate-400 -mt-1">Custom Sport Apparel</p>
+      </div>
+    </a>
+
+    <!-- Desktop menu -->
+    <nav class="hidden md:flex items-center gap-8 text-sm text-slate-300">
+      <a href="index.html" class="hover:text-cyan-200 transition">Home</a>
+      <a href="katalog.html" class="hover:text-cyan-200 transition">Katalog</a>
+      <a href="berita.html" class="hover:text-cyan-200 transition">Berita</a>
+      <a href="contact.html" class="text-cyan-200 font-semibold">Contact</a>
+    </nav>
+
+    <!-- CTA -->
+    <div class="hidden md:flex gap-3">
+      <a href="admin/login.html"
+        class="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
+        Masuk
+      </a>
+    </div>
+
+    <!-- Mobile button -->
+    <button id="btnMobile"
+      class="md:hidden inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-3 py-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="md:hidden hidden border-t border-white/5 bg-slate-950/90 backdrop-blur-xl">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex flex-col gap-3 text-sm text-slate-300">
+      <a href="index.html" class="hover:text-cyan-200 transition">Home</a>
+      <a href="katalog.html" class="hover:text-cyan-200 transition">Katalog</a>
+      <a href="berita.html" class="hover:text-cyan-200 transition">Berita</a>
+      <a href="contact.html" class="text-cyan-200 font-semibold">Contact</a>
+
+      <a href="admin/login.html"
+        class="mt-2 inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
+        Masuk
+      </a>
+    </div>
+  </div>
+</header>
+
+
+
+  <!-- PAGE HEADER -->
+  <main class="mx-auto max-w-6xl px-4">
+    <section class="py-16 md:py-20">
+      <div class="max-w-3xl">
+        <div
+          class="inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-xs text-cyan-200">
+          <span class="h-2 w-2 rounded-full bg-cyan-300 shadow-glow"></span>
+          Contact • Konsultasi • Order
+        </div>
+
+        <h1 class="mt-6 text-4xl md:text-5xl font-black tracking-tight leading-tight glow-text">
+          Hubungi <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-400">MAUJERSEY</span>
+        </h1>
+
+        <p class="mt-4 text-slate-300 leading-relaxed">
+          Silakan hubungi admin untuk tanya harga, estimasi produksi, atau request desain.
+          Kami fast response untuk kebutuhan order jersey custom.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#info"
+            class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
+            Lihat Kontak
+          </a>
+          <a href="#form"
+            class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-cyan-200 border border-cyan-300/40 hover:border-cyan-200 hover:bg-cyan-300/10 transition">
+            Isi Form
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT GRID -->
+    <section class="pb-16">
+      <div id="info" class="grid lg:grid-cols-2 gap-6">
+
+        <!-- INFO -->
+        <div class="glass rounded-3xl p-6 md:p-8">
+          <h2 class="text-2xl font-extrabold">Kontak Admin</h2>
+          <p class="mt-2 text-slate-300">Gunakan kontak berikut untuk konsultasi dan order.</p>
+
+          <div class="mt-6 grid gap-4">
+            <a href="#"
+              class="rounded-2xl border border-white/10 bg-white/5 p-5 hover:border-cyan-300/30 hover:bg-cyan-300/5 transition">
+              <p class="text-xs text-slate-400">WHATSAPP</p>
+              <p class="mt-1 text-lg font-bold text-cyan-200">+62 858-6497-8114</p>
+              <p class="mt-1 text-xs text-slate-400">Klik untuk chat langsung (opsional).</p>
+            </a>
+
+            <a href="#"
+              class="rounded-2xl border border-white/10 bg-white/5 p-5 hover:border-cyan-300/30 hover:bg-cyan-300/5 transition">
+              <p class="text-xs text-slate-400">EMAIL</p>
+              <p class="mt-1 font-semibold text-slate-100">tuangilbran@gmail.com</p>
+              <p class="mt-1 text-xs text-slate-400">Untuk kirim logo / referensi desain.</p>
+            </a>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <p class="text-xs text-slate-400">JAM OPERASIONAL</p>
+              <p class="mt-1 text-slate-100 font-semibold">Setiap Hari • 08.00 - 22.00 WIB</p>
+              <p class="mt-1 text-xs text-slate-400">Respon bisa lebih cepat saat jam aktif.</p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <p class="text-xs text-slate-400">PENGIRIMAN</p>
+              <p class="mt-1 text-slate-100 font-semibold">Seluruh Indonesia</p>
+              <p class="mt-1 text-xs text-slate-400">Packing aman & rapi.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div id="form" class="glass rounded-3xl p-6 md:p-8">
+          <h2 class="text-2xl font-extrabold">Form Konsultasi</h2>
+          <p class="mt-2 text-slate-300">Isi data singkat, admin akan balas secepatnya.</p>
+
+          <form class="mt-6 grid gap-4" onsubmit="return false;">
+            <div class="grid md:grid-cols-2 gap-4">
+              <input
+                class="w-full rounded-2xl bg-slate-950/40 border border-white/10 px-4 py-3 outline-none focus:border-cyan-300/50"
+                placeholder="Nama" />
+              <input
+                class="w-full rounded-2xl bg-slate-950/40 border border-white/10 px-4 py-3 outline-none focus:border-cyan-300/50"
+                placeholder="No WhatsApp" />
+            </div>
+
+            <input
+              class="w-full rounded-2xl bg-slate-950/40 border border-white/10 px-4 py-3 outline-none focus:border-cyan-300/50"
+              placeholder="Nama Tim / Komunitas (opsional)" />
+
+            <select
+              class="w-full rounded-2xl bg-slate-950/40 border border-white/10 px-4 py-3 outline-none focus:border-cyan-300/50">
+              <option selected disabled>Pilih kebutuhan</option>
+              <option>Jersey Futsal</option>
+              <option>Jersey Basket</option>
+              <option>Jersey Badminton</option>
+              <option>Jersey Sepeda</option>
+              <option>Jersey Esport</option>
+              <option>Paket Jersey Tim</option>
+              <option>Lainnya</option>
+            </select>
+
+            <textarea rows="6"
+              class="w-full rounded-2xl bg-slate-950/40 border border-white/10 px-4 py-3 outline-none focus:border-cyan-300/50"
+              placeholder="Tuliskan kebutuhan: jumlah pcs, size, deadline, bahan, desain..."></textarea>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <button type="button"
+                class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
+                Kirim Pesan
+              </button>
+
+              <a href="#"
+                class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-cyan-200 border border-cyan-300/40 hover:border-cyan-200 hover:bg-cyan-300/10 transition">
+                Chat WhatsApp
+              </a>
+            </div>
+
+            <p class="text-xs text-slate-400 text-center">
+              *Ini template frontend. Kalau mau, bisa aku buat versi otomatis kirim ke WhatsApp.
+            </p>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- MAP / EXTRA -->
+      <div class="mt-6 glass rounded-3xl p-6 md:p-8">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+          <div>
+            <h3 class="text-xl font-extrabold">Lokasi & Info</h3>
+            <p class="mt-1 text-slate-300 text-sm">Tambahkan Google Maps / alamat toko (jika ada).</p>
+          </div>
+        </div>
+
+        <div class="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.2313815868956!2d107.6740188!3d-6.9819998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c276a65f472b%3A0x2e9d823378f26b24!2sPT.%20Inovindo%20Digital%20Media!5e0!3m2!1sen!2sid!4v1768895048722!5m2!1sen!2sid"
+    class="h-56 w-full"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+<div class="mt-4 flex flex-wrap gap-3">
+  <a href="https://maps.app.goo.gl/ZJHzap8KBdqgn7L29" target="_blank"
+    class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
+    Buka di Google Maps
+  </a>
+
+</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/5">
+    <div
+      class="mx-auto max-w-6xl px-4 py-10 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
+      <p class="text-sm text-slate-400">
+        © <span class="text-white font-semibold">MAUJERSEY</span>. All Rights Reserved.
+      </p>
+      <div class="flex gap-4 text-sm">
+        <a class="text-slate-300 hover:text-cyan-200 transition" href="katalog.html">Katalog</a>
+        <a class="text-slate-300 hover:text-cyan-200 transition" href="berita.html">Berita</a>
+        <a class="text-slate-300 hover:text-cyan-200 transition" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const btnMobile = document.getElementById("btnMobile");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    btnMobile.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+
+</html>

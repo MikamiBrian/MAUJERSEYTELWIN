@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail Produk - Jersey Futsal Custom | MAUJERSEY</title>
+
+  <meta name="description"
+    content="Detail produk Jersey Futsal Custom MAUJERSEY: bahan, size chart, opsi custom, estimasi produksi, dan cara pemesanan." />
+  <meta name="keywords" content="jersey futsal custom, jersey futsal, maujersey, sublim, dryfit, milano" />
+  <meta name="theme-color" content="#020617" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/logo.png" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <style>
+/* ===== Swiper Nav Custom (Desktop only) ===== */
+.mj-nav {
+  width: 46px !important;
+  height: 46px !important;
+  border-radius: 9999px !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  background: rgba(2, 6, 23, 0.55) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow: 0 0 18px rgba(34, 211, 238, 0.18);
+  transition: transform 220ms ease, background 220ms ease, border-color 220ms ease;
+}
+
+.mj-nav:hover {
+  transform: scale(1.06);
+  border-color: rgba(34, 211, 238, 0.35) !important;
+  background: rgba(34, 211, 238, 0.08) !important;
+}
+
+/* matikan icon default swiper */
+.mj-nav::after {
+  display: none !important;
+}
+
+/* isi ikon panah */
+.mj-nav::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  display: block;
+  border-top: 2px solid rgba(255, 255, 255, 0.9);
+  border-right: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+/* panah kiri */
+.swiper-button-prev.mj-nav::before {
+  transform: rotate(-135deg);
+  margin-left: 2px;
+}
+
+/* panah kanan */
+.swiper-button-next.mj-nav::before {
+  transform: rotate(45deg);
+  margin-right: 2px;
+}
+
+  .fade-pop {
+    animation: fadePop 380ms ease;
+  }
+
+  @keyframes fadePop {
+    0% {
+      opacity: 0;
+      transform: scale(0.985);
+      filter: blur(2px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+      filter: blur(0);
+    }
+  }
+
+  /* Thumbnail active */
+  .thumb-active {
+    border-color: rgba(34, 211, 238, 0.55) !important;
+    box-shadow: 0 0 16px rgba(34, 211, 238, 0.25);
+  }
+
+    * {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .shadow-glow {
+      box-shadow: 0 0 20px rgba(34, 211, 238, 0.25);
+    }
+
+    .shadow-glow-soft {
+      box-shadow: 0 0 30px rgba(34, 211, 238, 0.18);
+    }
+
+    /* Smooth accordion animation */
+    .accPanel {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 420ms ease, opacity 320ms ease, transform 320ms ease;
+      transform: translateY(-4px);
+    }
+
+    .accPanel.is-open {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .accIconRight {
+      transition: transform 260ms ease;
+    }
+
+    .accBtn[aria-expanded="true"] .accIconRight {
+      transform: rotate(180deg);
+    }
+
+    /* Left icon color change */
+    .leftIcon {
+      transition: color 220ms ease, background 220ms ease, border-color 220ms ease;
+    }
+
+    .accBtn[aria-expanded="true"] .leftIcon {
+      color: rgb(34 211 238);
+      border-color: rgba(34, 211, 238, 0.35);
+      background: rgba(34, 211, 238, 0.10);
+      box-shadow: 0 0 18px rgba(34, 211, 238, 0.25);
+    }
+  </style>
+</head>
+
+<body class="bg-slate-950 text-white">
+
+  <!-- HEADER (Katalog aktif) -->
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-slate-950/60 backdrop-blur-xl">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3">
+        <div
+          class="h-10 w-10 rounded-2xl border border-cyan-300/30 bg-cyan-300/10 shadow-glow flex items-center justify-center overflow-hidden">
+          <img src="assets/img/logo.png" alt="MAUJERSEY Logo" class="h-9 w-9 object-contain" />
+        </div>
+        <div class="leading-tight">
+          <p class="text-lg font-extrabold tracking-tight">MAUJERSEY</p>
+          <p class="text-xs text-slate-400 -mt-1">Custom Sport Apparel</p>
+        </div>
+      </a>
+
+      <!-- Desktop menu -->
+      <nav class="hidden md:flex items-center gap-8 text-sm text-slate-300">
+        <a href="index.html" class="hover:text-cyan-200 transition">Home</a>
+        <a href="katalog.html" class="text-cyan-200 font-semibold">Katalog</a>
+        <a href="berita.html" class="hover:text-cyan-200 transition">Berita</a>
+        <a href="contact.html" class="hover:text-cyan-200 transition">Contact</a>
+      </nav>
+
+      <!-- CTA -->
+      <div class="hidden md:flex gap-3">
+        <a href="admin/login.html"
+          class="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
+          Masuk
+        </a>
+      </div>
+
+      <!-- Mobile button -->
+      <button id="btnMobile" type="button"
+        class="md:hidden inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-3 py-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/5 bg-slate-950/90 backdrop-blur-xl">
+      <div class="mx-auto max-w-6xl px-4 py-4 flex flex-col gap-3 text-sm text-slate-300">
+        <a href="index.html" class="hover:text-cyan-200 transition">Home</a>
+        <a href="katalog.html" class="text-cyan-200 font-semibold">Katalog</a>
+        <a href="berita.html" class="hover:text-cyan-200 transition">Berita</a>
+        <a href="contact.html" class="hover:text-cyan-200 transition">Contact</a>
+
+        <a href="admin/login.html"
+          class="mt-2 inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
+          Masuk
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.18),transparent_55%)]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(15,23,42,0.9),transparent_60%)]"></div>
+    </div>
+
+    <div class="mx-auto max-w-6xl px-4 pt-12 pb-10">
+      <div class="flex items-center gap-2 text-sm text-slate-400">
+        <a href="katalog.html" class="hover:text-cyan-200 transition">Katalog</a>
+        <span>/</span>
+        <span class="text-slate-200">Detail Produk</span>
+      </div>
+
+      <h1 class="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight">
+        Detail <span class="text-cyan-300">Produk</span>
+      </h1>
+      <p class="mt-3 max-w-3xl text-slate-300 leading-relaxed">
+        Informasi lengkap mengenai produk MAUJERSEY—mulai dari bahan, opsi custom, hingga cara pemesanan.
+        Jika ingin tanya harga & estimasi produksi, silakan konsultasi langsung via WhatsApp.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <main class="mx-auto max-w-6xl px-4 pb-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+      <!-- LEFT: GALLERY -->
+<section class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-4 md:p-6 shadow-glow-soft">
+
+  <!-- Swiper Main -->
+  <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-slate-900/40">
+    <div class="swiper productSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/img/Produk1.png" alt="Produk 1"
+            class="w-full h-[360px] md:h-[430px] object-cover select-none pointer-events-none" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/futsal11.png" alt="Produk 2"
+            class="w-full h-[360px] md:h-[430px] object-cover select-none pointer-events-none" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/futsal22.png" alt="Produk 3"
+            class="w-full h-[360px] md:h-[430px] object-cover select-none pointer-events-none" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/futsal33.png" alt="Produk 4"
+            class="w-full h-[360px] md:h-[430px] object-cover select-none pointer-events-none" />
+        </div>
+      </div>
+
+      <!-- Nav (desktop only) -->
+<button type="button"
+  class="swiper-button-prev mj-nav hidden md:flex">
+</button>
+
+<button type="button"
+  class="swiper-button-next mj-nav hidden md:flex">
+</button>
+    </div>
+
+    <!-- Overlay biar elegan -->
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-transparent"></div>
+  </div>
+
+  <!-- thumbs -->
+  <div class="mt-4 grid grid-cols-4 gap-3">
+    <button type="button"
+      class="thumbBtn rounded-xl overflow-hidden border border-white/10 hover:border-cyan-300/40 transition"
+      data-index="0">
+      <img src="assets/img/Produk1.png" alt="Produk 1" class="w-full h-20 object-cover">
+    </button>
+    <button type="button"
+      class="thumbBtn rounded-xl overflow-hidden border border-white/10 hover:border-cyan-300/40 transition"
+      data-index="1">
+      <img src="assets/img/futsal11.png" alt="Produk 2" class="w-full h-20 object-cover">
+    </button>
+    <button type="button"
+      class="thumbBtn rounded-xl overflow-hidden border border-white/10 hover:border-cyan-300/40 transition"
+      data-index="2">
+      <img src="assets/img/futsal22.png" alt="Produk 3" class="w-full h-20 object-cover">
+    </button>
+    <button type="button"
+      class="thumbBtn rounded-xl overflow-hidden border border-white/10 hover:border-cyan-300/40 transition"
+      data-index="3">
+      <img src="assets/img/futsal33.png" alt="Produk 4" class="w-full h-20 object-cover">
+    </button>
+  </div>
+
+  <!-- badges -->
+  <div class="mt-5 flex flex-wrap gap-2">
+    <span class="px-3 py-1 rounded-full text-xs border border-cyan-300/25 bg-cyan-300/10 text-cyan-200">
+      Sublim Print
+    </span>
+    <span class="px-3 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-slate-200">
+      Dryfit / Milano
+    </span>
+    <span class="px-3 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-slate-200">
+      Custom Nama & Nomor
+    </span>
+    <span class="px-3 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-slate-200">
+      Logo Tim
+    </span>
+    <span class="px-3 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-slate-200">
+      Finishing Rapi
+    </span>
+  </div>
+</section>
+
+      <!-- RIGHT: DETAILS -->
+      <section class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 md:p-7">
+        <div class="flex flex-wrap items-center gap-2">
+          <span
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-300/15 text-cyan-200 border border-cyan-300/20">
+            Jersey Olahraga
+          </span>
+
+          <span
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs bg-white/5 text-slate-200 border border-white/10">
+            ⏱ Estimasi 5–10 Hari
+          </span>
+
+          <span
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs bg-white/5 text-slate-200 border border-white/10">
+            ✅ Custom Order
+          </span>
+        </div>
+
+        <h2 class="mt-4 text-3xl font-extrabold tracking-tight">
+          Jersey Futsal Custom
+        </h2>
+
+        <p class="mt-3 text-slate-300 leading-relaxed">
+          Jersey Futsal Custom MAUJERSEY dibuat dengan bahan adem dan ringan untuk aktivitas indoor yang intens.
+          Menggunakan metode print sublim berkualitas tinggi agar warna tajam, tidak mudah pudar, serta detail desain
+          lebih presisi.
+        </p>
+
+        <div class="mt-4">
+          <a href="contact.html" class="text-cyan-200 hover:text-cyan-100 transition underline underline-offset-4">
+            Konsultasi & Order via WhatsApp
+          </a>
+        </div>
+
+        <!-- ACCORDION -->
+        <div class="mt-6 space-y-3">
+
+          <!-- item 1 -->
+          <div class="rounded-2xl border border-white/10 overflow-hidden">
+            <button type="button"
+              class="accBtn w-full px-4 py-4 flex items-center justify-between text-left bg-slate-900/30 hover:bg-slate-900/40 transition"
+              data-target="acc1" aria-expanded="false">
+              <div class="flex items-center gap-3">
+                <!-- left icon -->
+                <span class="leftIcon w-10 h-10 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white">
+                  <!-- Clipboard icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                    <path d="M9 12h6" />
+                    <path d="M9 16h6" />
+                  </svg>
+                </span>
+                <span class="text-lg font-bold">Spesifikasi Produk</span>
+              </div>
+
+              <!-- right chevron -->
+              <span class="accIconRight text-slate-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </span>
+            </button>
+
+            <div id="acc1" class="accPanel px-4 pb-4 pt-0 text-slate-300">
+              <div class="pt-3">
+                <ul class="space-y-2 text-sm">
+                  <li><span class="text-white font-semibold">Jenis:</span> Jersey Futsal Custom</li>
+                  <li><span class="text-white font-semibold">Printing:</span> Full Print Sublim</li>
+                  <li><span class="text-white font-semibold">Opsi Custom:</span> Nama, Nomor, Logo Tim, Sponsor</li>
+                  <li><span class="text-white font-semibold">Ukuran:</span> S – XXXL (tersedia size chart)</li>
+                  <li><span class="text-white font-semibold">Minimal Order:</span> Fleksibel (satuan / tim)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div class="rounded-2xl border border-white/10 overflow-hidden">
+            <button type="button"
+              class="accBtn w-full px-4 py-4 flex items-center justify-between text-left bg-slate-900/30 hover:bg-slate-900/40 transition"
+              data-target="acc2" aria-expanded="false">
+              <div class="flex items-center gap-3">
+                <!-- left icon -->
+                <span class="leftIcon w-10 h-10 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white">
+                  <!-- Ruler icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 3 3 21" />
+                    <path d="M16 3 3 16" />
+                    <path d="M5 11 3 13" />
+                    <path d="M9 7 7 9" />
+                    <path d="M13 5 11 7" />
+                    <path d="M19 5 17 7" />
+                  </svg>
+                </span>
+                <span class="text-lg font-bold">Size Chart (Panduan Ukuran)</span>
+              </div>
+
+              <span class="accIconRight text-slate-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </span>
+            </button>
+
+            <div id="acc2" class="accPanel px-4 pb-4 pt-0 text-slate-300">
+              <div class="pt-3">
+                <p class="text-sm leading-relaxed">
+                  Gunakan panduan ukuran di bawah ini agar size jersey lebih pas. Jika ragu, disarankan naik 1 size untuk
+                  kenyamanan saat bermain.
+                </p>
+                <ul class="mt-3 space-y-2 text-sm">
+                  <li><span class="text-white font-semibold">S</span>: badan slim / remaja</li>
+                  <li><span class="text-white font-semibold">M</span>: standar remaja/dewasa</li>
+                  <li><span class="text-white font-semibold">L</span>: standar dewasa</li>
+                  <li><span class="text-white font-semibold">XL</span>: fit lebih longgar</li>
+                  <li><span class="text-white font-semibold">XXL–XXXL</span>: big size</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 3 -->
+          <div class="rounded-2xl border border-white/10 overflow-hidden">
+            <button type="button"
+              class="accBtn w-full px-4 py-4 flex items-center justify-between text-left bg-slate-900/30 hover:bg-slate-900/40 transition"
+              data-target="acc3" aria-expanded="false">
+              <div class="flex items-center gap-3">
+                <!-- left icon -->
+                <span class="leftIcon w-10 h-10 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white">
+                  <!-- Flow icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 3h5v5" />
+                    <path d="M21 3l-6 6" />
+                    <rect x="3" y="7" width="6" height="6" rx="1" />
+                    <rect x="15" y="15" width="6" height="6" rx="1" />
+                    <path d="M6 13v4a2 2 0 0 0 2 2h7" />
+                  </svg>
+                </span>
+                <span class="text-lg font-bold">Alur Pemesanan</span>
+              </div>
+
+              <span class="accIconRight text-slate-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </span>
+            </button>
+
+            <div id="acc3" class="accPanel px-4 pb-4 pt-0 text-slate-300">
+              <div class="pt-3">
+                <ol class="space-y-2 text-sm list-decimal list-inside">
+                  <li>Konsultasi kebutuhan (jenis, jumlah pcs, deadline).</li>
+                  <li>Kirim referensi desain atau request desain dari MAUJERSEY.</li>
+                  <li>Revisi desain sampai fix.</li>
+                  <li>Produksi + quality control.</li>
+                  <li>Pengiriman ke alamat pemesan.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="contact.html"
+            class="inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
+            Order via WhatsApp
+          </a>
+
+          <a href="katalog.html"
+            class="inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold border border-white/10 bg-white/5 hover:bg-white/10 transition text-slate-200">
+            ← Kembali ke Katalog
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/5 bg-slate-950/60">
+    <div
+      class="mx-auto max-w-6xl px-4 py-10 text-sm text-slate-400 flex flex-col md:flex-row items-center justify-between gap-3">
+      <p>© <span id="year"></span> MAUJERSEY. All Rights Reserved.</p>
+      <p class="text-slate-500">Custom Sport Apparel — dibuat dengan rapi.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+
+    // ===== SWIPER =====
+    const swiper = new Swiper(".productSwiper", {
+      loop: true,
+      speed: 850,
+      effect: "fade",
+      fadeEffect: { crossFade: true },
+
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false, // penting biar masih bisa di-control
+        pauseOnMouseEnter: true
+      },
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    });
+
+    // ===== THUMB ACTIVE UI =====
+    const thumbButtons = document.querySelectorAll(".thumbBtn");
+
+    function setActiveThumb(realIndex) {
+      thumbButtons.forEach(btn => btn.classList.remove("thumb-active"));
+      const activeBtn = document.querySelector(`.thumbBtn[data-index="${realIndex}"]`);
+      activeBtn?.classList.add("thumb-active");
+    }
+
+    setActiveThumb(0);
+
+    // ===== PAUSE AUTOPLAY SAAT USER PILIH =====
+    let resumeTimer = null;
+    const RESUME_DELAY = 6000; // 6 detik baru jalan lagi
+
+    function pauseAutoplayTemporarily() {
+      swiper.autoplay.stop();
+      clearTimeout(resumeTimer);
+
+      resumeTimer = setTimeout(() => {
+        swiper.autoplay.start();
+      }, RESUME_DELAY);
+    }
+
+    // ===== ANIMASI PAS GANTI SLIDE VIA THUMB =====
+    function animateCurrentSlide() {
+      const activeSlide = document.querySelector(".productSwiper .swiper-slide-active img");
+      if (!activeSlide) return;
+
+      activeSlide.classList.remove("fade-pop");
+      // trick reflow
+      void activeSlide.offsetWidth;
+      activeSlide.classList.add("fade-pop");
+    }
+
+    // click thumbnail
+    thumbButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const index = Number(btn.dataset.index || 0);
+
+        pauseAutoplayTemporarily();
+
+        // slideToLoop biar aman walau loop true
+        swiper.slideToLoop(index, 700);
+
+        setActiveThumb(index);
+
+        // animasi setelah transisi slide
+        setTimeout(() => animateCurrentSlide(), 80);
+      });
+    });
+
+    // update thumb active saat slide berubah otomatis
+    swiper.on("slideChange", () => {
+      setActiveThumb(swiper.realIndex);
+      setTimeout(() => animateCurrentSlide(), 80);
+    });
+
+  });
+</script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // mobile menu
+      const btnMobile = document.getElementById("btnMobile");
+      const mobileMenu = document.getElementById("mobileMenu");
+      btnMobile?.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // thumb gallery
+      const mainImage = document.getElementById("mainImage");
+      document.querySelectorAll(".thumbBtn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const img = btn.getAttribute("data-img");
+          if (img && mainImage) mainImage.src = img;
+        });
+      });
+
+      // ===== ACCORDION SMOOTH =====
+      const accButtons = document.querySelectorAll(".accBtn");
+
+      function closeAll() {
+        document.querySelectorAll(".accBtn").forEach(b => b.setAttribute("aria-expanded", "false"));
+        document.querySelectorAll(".accPanel").forEach(p => {
+          p.classList.remove("is-open");
+          p.style.maxHeight = "0px";
+        });
+      }
+
+      accButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const targetId = btn.getAttribute("data-target");
+          const panel = document.getElementById(targetId);
+
+          if (!panel) return;
+
+          const expanded = btn.getAttribute("aria-expanded") === "true";
+
+          // close others first
+          closeAll();
+
+          // open current if previously closed
+          if (!expanded) {
+            btn.setAttribute("aria-expanded", "true");
+            panel.classList.add("is-open");
+
+            // set max height for smooth animation
+            panel.style.maxHeight = panel.scrollHeight + 28 + "px";
+          }
+        });
+      });
+
+      // open first accordion default
+      const firstBtn = document.querySelector('.accBtn[data-target="acc1"]');
+      const firstPanel = document.getElementById("acc1");
+      if (firstBtn && firstPanel) {
+        closeAll();
+        firstBtn.setAttribute("aria-expanded", "true");
+        firstPanel.classList.add("is-open");
+        firstPanel.style.maxHeight = firstPanel.scrollHeight + 28 + "px";
+      }
+    });
+  </script>
+
+</body>
+
+</html>
