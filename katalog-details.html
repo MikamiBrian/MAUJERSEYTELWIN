@@ -14,8 +14,8 @@
   <!-- Favicon -->
   <link rel="icon" href="assets/img/logo.png" />
 
+  <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
 
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -27,77 +27,6 @@
     rel="stylesheet">
 
   <style>
-/* ===== Swiper Nav Custom (Desktop only) ===== */
-.mj-nav {
-  width: 46px !important;
-  height: 46px !important;
-  border-radius: 9999px !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  background: rgba(2, 6, 23, 0.55) !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  box-shadow: 0 0 18px rgba(34, 211, 238, 0.18);
-  transition: transform 220ms ease, background 220ms ease, border-color 220ms ease;
-}
-
-.mj-nav:hover {
-  transform: scale(1.06);
-  border-color: rgba(34, 211, 238, 0.35) !important;
-  background: rgba(34, 211, 238, 0.08) !important;
-}
-
-/* matikan icon default swiper */
-.mj-nav::after {
-  display: none !important;
-}
-
-/* isi ikon panah */
-.mj-nav::before {
-  content: "";
-  width: 18px;
-  height: 18px;
-  display: block;
-  border-top: 2px solid rgba(255, 255, 255, 0.9);
-  border-right: 2px solid rgba(255, 255, 255, 0.9);
-}
-
-/* panah kiri */
-.swiper-button-prev.mj-nav::before {
-  transform: rotate(-135deg);
-  margin-left: 2px;
-}
-
-/* panah kanan */
-.swiper-button-next.mj-nav::before {
-  transform: rotate(45deg);
-  margin-right: 2px;
-}
-
-  .fade-pop {
-    animation: fadePop 380ms ease;
-  }
-
-  @keyframes fadePop {
-    0% {
-      opacity: 0;
-      transform: scale(0.985);
-      filter: blur(2px);
-    }
-
-    100% {
-      opacity: 1;
-      transform: scale(1);
-      filter: blur(0);
-    }
-  }
-
-  /* Thumbnail active */
-  .thumb-active {
-    border-color: rgba(34, 211, 238, 0.55) !important;
-    box-shadow: 0 0 16px rgba(34, 211, 238, 0.25);
-  }
-
     * {
       font-family: "Poppins", sans-serif;
     }
@@ -108,6 +37,77 @@
 
     .shadow-glow-soft {
       box-shadow: 0 0 30px rgba(34, 211, 238, 0.18);
+    }
+
+    /* ===== Swiper Nav Custom (Desktop only) ===== */
+    .mj-nav {
+      width: 46px !important;
+      height: 46px !important;
+      border-radius: 9999px !important;
+      border: 1px solid rgba(255, 255, 255, 0.12) !important;
+      background: rgba(2, 6, 23, 0.55) !important;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+
+      box-shadow: 0 0 18px rgba(34, 211, 238, 0.18);
+      transition: transform 220ms ease, background 220ms ease, border-color 220ms ease;
+    }
+
+    .mj-nav:hover {
+      transform: scale(1.06);
+      border-color: rgba(34, 211, 238, 0.35) !important;
+      background: rgba(34, 211, 238, 0.08) !important;
+    }
+
+    /* matikan icon default swiper */
+    .mj-nav::after {
+      display: none !important;
+    }
+
+    /* isi ikon panah */
+    .mj-nav::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      display: block;
+      border-top: 2px solid rgba(255, 255, 255, 0.9);
+      border-right: 2px solid rgba(255, 255, 255, 0.9);
+    }
+
+    /* panah kiri */
+    .swiper-button-prev.mj-nav::before {
+      transform: rotate(-135deg);
+      margin-left: 2px;
+    }
+
+    /* panah kanan */
+    .swiper-button-next.mj-nav::before {
+      transform: rotate(45deg);
+      margin-right: 2px;
+    }
+
+    .fade-pop {
+      animation: fadePop 380ms ease;
+    }
+
+    @keyframes fadePop {
+      0% {
+        opacity: 0;
+        transform: scale(0.985);
+        filter: blur(2px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+      }
+    }
+
+    /* Thumbnail active */
+    .thumb-active {
+      border-color: rgba(34, 211, 238, 0.55) !important;
+      box-shadow: 0 0 16px rgba(34, 211, 238, 0.25);
     }
 
     /* Smooth accordion animation */
@@ -235,87 +235,80 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
       <!-- LEFT: GALLERY -->
-<section class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-4 md:p-6 shadow-glow-soft">
+      <section class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-4 md:p-6 shadow-glow-soft">
 
-  <!-- Swiper Main -->
-  <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-slate-900/40">
-    <div class="swiper productSwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="assets/img/Produk1.png" alt="Produk 1"
-            class="w-full h-[360px] md:h-[430px] object-cover select-none pointer-events-none" />
+        <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-slate-900/40">
+          <div class="swiper productSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/img/Produk1.png" alt="Produk 1"
+                  class="w-full h-[360px] md:h-[430px] object-cover select-none pointer-events-none" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/futsal11.png" alt="Produk 2"
+                  class="w-full h-[360px] md:h-[430px] object-cover select-none pointer-events-none" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/futsal22.png" alt="Produk 3"
+                  class="w-full h-[360px] md:h-[430px] object-cover select-none pointer-events-none" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/futsal33.png" alt="Produk 4"
+                  class="w-full h-[360px] md:h-[430px] object-cover select-none pointer-events-none" />
+              </div>
+            </div>
+
+            <!-- Nav (desktop only) -->
+            <button type="button" class="swiper-button-prev mj-nav hidden md:flex"></button>
+            <button type="button" class="swiper-button-next mj-nav hidden md:flex"></button>
+          </div>
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-transparent"></div>
         </div>
-        <div class="swiper-slide">
-          <img src="assets/img/futsal11.png" alt="Produk 2"
-            class="w-full h-[360px] md:h-[430px] object-cover select-none pointer-events-none" />
+
+        <!-- thumbs -->
+        <div class="mt-4 grid grid-cols-4 gap-3">
+          <button type="button"
+            class="thumbBtn rounded-xl overflow-hidden border border-white/10 hover:border-cyan-300/40 transition"
+            data-index="0">
+            <img src="assets/img/Produk1.png" alt="Produk 1" class="w-full h-20 object-cover">
+          </button>
+          <button type="button"
+            class="thumbBtn rounded-xl overflow-hidden border border-white/10 hover:border-cyan-300/40 transition"
+            data-index="1">
+            <img src="assets/img/futsal11.png" alt="Produk 2" class="w-full h-20 object-cover">
+          </button>
+          <button type="button"
+            class="thumbBtn rounded-xl overflow-hidden border border-white/10 hover:border-cyan-300/40 transition"
+            data-index="2">
+            <img src="assets/img/futsal22.png" alt="Produk 3" class="w-full h-20 object-cover">
+          </button>
+          <button type="button"
+            class="thumbBtn rounded-xl overflow-hidden border border-white/10 hover:border-cyan-300/40 transition"
+            data-index="3">
+            <img src="assets/img/futsal33.png" alt="Produk 4" class="w-full h-20 object-cover">
+          </button>
         </div>
-        <div class="swiper-slide">
-          <img src="assets/img/futsal22.png" alt="Produk 3"
-            class="w-full h-[360px] md:h-[430px] object-cover select-none pointer-events-none" />
+
+        <!-- badges -->
+        <div class="mt-5 flex flex-wrap gap-2">
+          <span class="px-3 py-1 rounded-full text-xs border border-cyan-300/25 bg-cyan-300/10 text-cyan-200">
+            Sublim Print
+          </span>
+          <span class="px-3 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-slate-200">
+            Dryfit / Milano
+          </span>
+          <span class="px-3 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-slate-200">
+            Custom Nama & Nomor
+          </span>
+          <span class="px-3 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-slate-200">
+            Logo Tim
+          </span>
+          <span class="px-3 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-slate-200">
+            Finishing Rapi
+          </span>
         </div>
-        <div class="swiper-slide">
-          <img src="assets/img/futsal33.png" alt="Produk 4"
-            class="w-full h-[360px] md:h-[430px] object-cover select-none pointer-events-none" />
-        </div>
-      </div>
-
-      <!-- Nav (desktop only) -->
-<button type="button"
-  class="swiper-button-prev mj-nav hidden md:flex">
-</button>
-
-<button type="button"
-  class="swiper-button-next mj-nav hidden md:flex">
-</button>
-    </div>
-
-    <!-- Overlay biar elegan -->
-    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-transparent"></div>
-  </div>
-
-  <!-- thumbs -->
-  <div class="mt-4 grid grid-cols-4 gap-3">
-    <button type="button"
-      class="thumbBtn rounded-xl overflow-hidden border border-white/10 hover:border-cyan-300/40 transition"
-      data-index="0">
-      <img src="assets/img/Produk1.png" alt="Produk 1" class="w-full h-20 object-cover">
-    </button>
-    <button type="button"
-      class="thumbBtn rounded-xl overflow-hidden border border-white/10 hover:border-cyan-300/40 transition"
-      data-index="1">
-      <img src="assets/img/futsal11.png" alt="Produk 2" class="w-full h-20 object-cover">
-    </button>
-    <button type="button"
-      class="thumbBtn rounded-xl overflow-hidden border border-white/10 hover:border-cyan-300/40 transition"
-      data-index="2">
-      <img src="assets/img/futsal22.png" alt="Produk 3" class="w-full h-20 object-cover">
-    </button>
-    <button type="button"
-      class="thumbBtn rounded-xl overflow-hidden border border-white/10 hover:border-cyan-300/40 transition"
-      data-index="3">
-      <img src="assets/img/futsal33.png" alt="Produk 4" class="w-full h-20 object-cover">
-    </button>
-  </div>
-
-  <!-- badges -->
-  <div class="mt-5 flex flex-wrap gap-2">
-    <span class="px-3 py-1 rounded-full text-xs border border-cyan-300/25 bg-cyan-300/10 text-cyan-200">
-      Sublim Print
-    </span>
-    <span class="px-3 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-slate-200">
-      Dryfit / Milano
-    </span>
-    <span class="px-3 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-slate-200">
-      Custom Nama & Nomor
-    </span>
-    <span class="px-3 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-slate-200">
-      Logo Tim
-    </span>
-    <span class="px-3 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-slate-200">
-      Finishing Rapi
-    </span>
-  </div>
-</section>
+      </section>
 
       <!-- RIGHT: DETAILS -->
       <section class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 md:p-7">
@@ -361,9 +354,8 @@
               class="accBtn w-full px-4 py-4 flex items-center justify-between text-left bg-slate-900/30 hover:bg-slate-900/40 transition"
               data-target="acc1" aria-expanded="false">
               <div class="flex items-center gap-3">
-                <!-- left icon -->
-                <span class="leftIcon w-10 h-10 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white">
-                  <!-- Clipboard icon -->
+                <span
+                  class="leftIcon w-10 h-10 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
@@ -375,7 +367,6 @@
                 <span class="text-lg font-bold">Spesifikasi Produk</span>
               </div>
 
-              <!-- right chevron -->
               <span class="accIconRight text-slate-400">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -403,9 +394,8 @@
               class="accBtn w-full px-4 py-4 flex items-center justify-between text-left bg-slate-900/30 hover:bg-slate-900/40 transition"
               data-target="acc2" aria-expanded="false">
               <div class="flex items-center gap-3">
-                <!-- left icon -->
-                <span class="leftIcon w-10 h-10 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white">
-                  <!-- Ruler icon -->
+                <span
+                  class="leftIcon w-10 h-10 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 3 3 21" />
@@ -450,9 +440,8 @@
               class="accBtn w-full px-4 py-4 flex items-center justify-between text-left bg-slate-900/30 hover:bg-slate-900/40 transition"
               data-target="acc3" aria-expanded="false">
               <div class="flex items-center gap-3">
-                <!-- left icon -->
-                <span class="leftIcon w-10 h-10 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white">
-                  <!-- Flow icon -->
+                <span
+                  class="leftIcon w-10 h-10 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M16 3h5v5" />
@@ -485,6 +474,7 @@
               </div>
             </div>
           </div>
+
         </div>
 
         <!-- CTA -->
@@ -504,166 +494,151 @@
   </main>
 
   <!-- FOOTER -->
-<footer class="border-t border-white/5">
-  <div
-    class="mx-auto max-w-6xl px-4 py-10 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
+  <footer class="border-t border-white/5">
+    <div
+      class="mx-auto max-w-6xl px-4 py-10 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
 
-    <p class="text-sm text-slate-400">
-      © <span class="text-white font-semibold">MAUJERSEY</span>. All Rights Reserved.
-    </p>
+      <p class="text-sm text-slate-400">
+        © <span class="text-white font-semibold">MAUJERSEY</span>. All Rights Reserved.
+      </p>
 
-    <!-- SOCIAL -->
-    <div class="flex items-center gap-3">
-      <!-- TikTok -->
-      <a href="https://www.tiktok.com/@username" target="_blank" rel="noopener"
-        class="group inline-flex items-center justify-center h-10 w-10 rounded-full border border-white/10 bg-white/5 hover:bg-cyan-300/10 hover:border-cyan-300/30 transition">
-        <svg class="h-5 w-5 text-slate-200 group-hover:text-cyan-200 transition" viewBox="0 0 24 24" fill="currentColor">
-          <path
-            d="M17.5 6.06c-1.36-.87-2.25-2.34-2.34-4.06h-3.1v14.2a2.6 2.6 0 1 1-2.23-2.58v-3.2a5.8 5.8 0 1 0 5.33 5.78V9.18c1.2.86 2.67 1.37 4.34 1.37V7.5c-.75 0-1.46-.15-2.01-.44z" />
-        </svg>
-      </a>
+      <div class="flex items-center gap-3">
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@username" target="_blank" rel="noopener"
+          class="group inline-flex items-center justify-center h-10 w-10 rounded-full border border-white/10 bg-white/5 hover:bg-cyan-300/10 hover:border-cyan-300/30 transition">
+          <svg class="h-5 w-5 text-slate-200 group-hover:text-cyan-200 transition" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              d="M17.5 6.06c-1.36-.87-2.25-2.34-2.34-4.06h-3.1v14.2a2.6 2.6 0 1 1-2.23-2.58v-3.2a5.8 5.8 0 1 0 5.33 5.78V9.18c1.2.86 2.67 1.37 4.34 1.37V7.5c-.75 0-1.46-.15-2.01-.44z" />
+          </svg>
+        </a>
 
-      <!-- Instagram -->
-      <a href="https://instagram.com/username" target="_blank" rel="noopener"
-        class="group inline-flex items-center justify-center h-10 w-10 rounded-full border border-white/10 bg-white/5 hover:bg-cyan-300/10 hover:border-cyan-300/30 transition">
-        <svg class="h-5 w-5 text-slate-200 group-hover:text-cyan-200 transition" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
-          <path d="M16 11.37a4 4 0 1 1-7.75 1.2 4 4 0 0 1 7.75-1.2z"></path>
-          <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
-        </svg>
-      </a>
+        <!-- Instagram -->
+        <a href="https://instagram.com/username" target="_blank" rel="noopener"
+          class="group inline-flex items-center justify-center h-10 w-10 rounded-full border border-white/10 bg-white/5 hover:bg-cyan-300/10 hover:border-cyan-300/30 transition">
+          <svg class="h-5 w-5 text-slate-200 group-hover:text-cyan-200 transition" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+            <path d="M16 11.37a4 4 0 1 1-7.75 1.2 4 4 0 0 1 7.75-1.2z"></path>
+            <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+          </svg>
+        </a>
 
-      <!-- Facebook -->
-      <a href="https://facebook.com/username" target="_blank" rel="noopener"
-        class="group inline-flex items-center justify-center h-10 w-10 rounded-full border border-white/10 bg-white/5 hover:bg-cyan-300/10 hover:border-cyan-300/30 transition">
-        <svg class="h-5 w-5 text-slate-200 group-hover:text-cyan-200 transition" viewBox="0 0 24 24" fill="currentColor">
-          <path
-            d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5v1.9H17l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z" />
-        </svg>
-      </a>
+        <!-- Facebook -->
+        <a href="https://facebook.com/username" target="_blank" rel="noopener"
+          class="group inline-flex items-center justify-center h-10 w-10 rounded-full border border-white/10 bg-white/5 hover:bg-cyan-300/10 hover:border-cyan-300/30 transition">
+          <svg class="h-5 w-5 text-slate-200 group-hover:text-cyan-200 transition" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5v1.9H17l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z" />
+          </svg>
+        </a>
+      </div>
     </div>
+  </footer>
 
-  </div>
-</footer>
-
-  <!-- SCRIPT -->
-
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script>
-  document.addEventListener("DOMContentLoaded", () => {
-
-    // ===== SWIPER =====
-    const swiper = new Swiper(".productSwiper", {
-      loop: true,
-      speed: 850,
-      effect: "fade",
-      fadeEffect: { crossFade: true },
-
-      autoplay: {
-        delay: 3500,
-        disableOnInteraction: false, // penting biar masih bisa di-control
-        pauseOnMouseEnter: true
-      },
-
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      }
-    });
-
-    // ===== THUMB ACTIVE UI =====
-    const thumbButtons = document.querySelectorAll(".thumbBtn");
-
-    function setActiveThumb(realIndex) {
-      thumbButtons.forEach(btn => btn.classList.remove("thumb-active"));
-      const activeBtn = document.querySelector(`.thumbBtn[data-index="${realIndex}"]`);
-      activeBtn?.classList.add("thumb-active");
-    }
-
-    setActiveThumb(0);
-
-    // ===== PAUSE AUTOPLAY SAAT USER PILIH =====
-    let resumeTimer = null;
-    const RESUME_DELAY = 6000; // 6 detik baru jalan lagi
-
-    function pauseAutoplayTemporarily() {
-      swiper.autoplay.stop();
-      clearTimeout(resumeTimer);
-
-      resumeTimer = setTimeout(() => {
-        swiper.autoplay.start();
-      }, RESUME_DELAY);
-    }
-
-    // ===== ANIMASI PAS GANTI SLIDE VIA THUMB =====
-    function animateCurrentSlide() {
-      const activeSlide = document.querySelector(".productSwiper .swiper-slide-active img");
-      if (!activeSlide) return;
-
-      activeSlide.classList.remove("fade-pop");
-      // trick reflow
-      void activeSlide.offsetWidth;
-      activeSlide.classList.add("fade-pop");
-    }
-
-    // click thumbnail
-    thumbButtons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        const index = Number(btn.dataset.index || 0);
-
-        pauseAutoplayTemporarily();
-
-        // slideToLoop biar aman walau loop true
-        swiper.slideToLoop(index, 700);
-
-        setActiveThumb(index);
-
-        // animasi setelah transisi slide
-        setTimeout(() => animateCurrentSlide(), 80);
-      });
-    });
-
-    // update thumb active saat slide berubah otomatis
-    swiper.on("slideChange", () => {
-      setActiveThumb(swiper.realIndex);
-      setTimeout(() => animateCurrentSlide(), 80);
-    });
-
-  });
-</script>
-
-
-  <script>
     document.addEventListener("DOMContentLoaded", () => {
-      // year
-      document.getElementById("year").textContent = new Date().getFullYear();
+      // ===== YEAR (kalau ada id year di tempat lain) =====
+      // (tidak dipakai di footer versi ini, tapi aman)
 
-      // mobile menu
+      // ===== Mobile menu =====
       const btnMobile = document.getElementById("btnMobile");
       const mobileMenu = document.getElementById("mobileMenu");
       btnMobile?.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
       });
 
-      // thumb gallery
-      const mainImage = document.getElementById("mainImage");
-      document.querySelectorAll(".thumbBtn").forEach(btn => {
+      // ===== SWIPER =====
+      const swiper = new Swiper(".productSwiper", {
+        loop: true,
+        speed: 850,
+        effect: "fade",
+        fadeEffect: { crossFade: true },
+
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      });
+
+      // ===== THUMB ACTIVE UI =====
+      const thumbButtons = document.querySelectorAll(".thumbBtn");
+
+      function setActiveThumb(realIndex) {
+        thumbButtons.forEach(btn => btn.classList.remove("thumb-active"));
+        const activeBtn = document.querySelector(`.thumbBtn[data-index="${realIndex}"]`);
+        activeBtn?.classList.add("thumb-active");
+      }
+
+      setActiveThumb(0);
+
+      // ===== PAUSE AUTOPLAY SAAT USER PILIH =====
+      let resumeTimer = null;
+      const RESUME_DELAY = 6000;
+
+      function pauseAutoplayTemporarily() {
+        swiper.autoplay.stop();
+        clearTimeout(resumeTimer);
+
+        resumeTimer = setTimeout(() => {
+          swiper.autoplay.start();
+        }, RESUME_DELAY);
+      }
+
+      function animateCurrentSlide() {
+        const activeSlide = document.querySelector(".productSwiper .swiper-slide-active img");
+        if (!activeSlide) return;
+
+        activeSlide.classList.remove("fade-pop");
+        void activeSlide.offsetWidth;
+        activeSlide.classList.add("fade-pop");
+      }
+
+      thumbButtons.forEach(btn => {
         btn.addEventListener("click", () => {
-          const img = btn.getAttribute("data-img");
-          if (img && mainImage) mainImage.src = img;
+          const index = Number(btn.dataset.index || 0);
+
+          pauseAutoplayTemporarily();
+          swiper.slideToLoop(index, 700);
+
+          setActiveThumb(index);
+          setTimeout(() => animateCurrentSlide(), 80);
         });
       });
 
-      // ===== ACCORDION SMOOTH =====
+      swiper.on("slideChange", () => {
+        setActiveThumb(swiper.realIndex);
+        setTimeout(() => animateCurrentSlide(), 80);
+      });
+
+      // ===== ACCORDION FIX (pasti jalan) =====
       const accButtons = document.querySelectorAll(".accBtn");
 
-      function closeAll() {
-        document.querySelectorAll(".accBtn").forEach(b => b.setAttribute("aria-expanded", "false"));
+      function closeAllAccordion() {
+        accButtons.forEach(b => b.setAttribute("aria-expanded", "false"));
         document.querySelectorAll(".accPanel").forEach(p => {
           p.classList.remove("is-open");
           p.style.maxHeight = "0px";
+        });
+      }
+
+      function openAccordion(btn, panel) {
+        btn.setAttribute("aria-expanded", "true");
+        panel.classList.add("is-open");
+
+        // set maxHeight setelah panel diberi class
+        requestAnimationFrame(() => {
+          panel.style.maxHeight = panel.scrollHeight + 24 + "px";
         });
       }
 
@@ -671,37 +646,32 @@
         btn.addEventListener("click", () => {
           const targetId = btn.getAttribute("data-target");
           const panel = document.getElementById(targetId);
-
           if (!panel) return;
 
           const expanded = btn.getAttribute("aria-expanded") === "true";
 
-          // close others first
-          closeAll();
-
-          // open current if previously closed
-          if (!expanded) {
-            btn.setAttribute("aria-expanded", "true");
-            panel.classList.add("is-open");
-
-            // set max height for smooth animation
-            panel.style.maxHeight = panel.scrollHeight + 28 + "px";
+          if (expanded) {
+            // kalau klik yang sedang open -> close
+            btn.setAttribute("aria-expanded", "false");
+            panel.classList.remove("is-open");
+            panel.style.maxHeight = "0px";
+            return;
           }
+
+          closeAllAccordion();
+          openAccordion(btn, panel);
         });
       });
 
-      // open first accordion default
+      // Open first accordion by default
       const firstBtn = document.querySelector('.accBtn[data-target="acc1"]');
       const firstPanel = document.getElementById("acc1");
       if (firstBtn && firstPanel) {
-        closeAll();
-        firstBtn.setAttribute("aria-expanded", "true");
-        firstPanel.classList.add("is-open");
-        firstPanel.style.maxHeight = firstPanel.scrollHeight + 28 + "px";
+        closeAllAccordion();
+        openAccordion(firstBtn, firstPanel);
       }
     });
   </script>
-
 </body>
 
 </html>
