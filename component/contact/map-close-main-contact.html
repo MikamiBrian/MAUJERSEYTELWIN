@@ -1,0 +1,30 @@
+<!-- MAP / EXTRA -->
+      <div class="mt-6 glass rounded-3xl p-6 md:p-8">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+          <div>
+            <h3 class="text-xl font-extrabold">Lokasi & Info</h3>
+            <p class="mt-1 text-slate-300 text-sm">Tambahkan Google Maps / alamat toko (jika ada).</p>
+          </div>
+        </div>
+
+        <div class="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.2313815868956!2d107.6740188!3d-6.9819998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c276a65f472b%3A0x2e9d823378f26b24!2sPT.%20Inovindo%20Digital%20Media!5e0!3m2!1sen!2sid!4v1768895048722!5m2!1sen!2sid"
+    class="h-56 w-full"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+<div class="mt-4 flex flex-wrap gap-3">
+  <a href="https://maps.app.goo.gl/ZJHzap8KBdqgn7L29" target="_blank"
+    class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
+    Buka di Google Maps
+  </a>
+
+</div>
+      </div>
+    </section>
+  </main>

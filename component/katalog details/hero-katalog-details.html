@@ -1,0 +1,23 @@
+<!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.18),transparent_55%)]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(15,23,42,0.9),transparent_60%)]"></div>
+    </div>
+
+    <div class="mx-auto max-w-6xl px-4 pt-12 pb-10">
+      <div class="flex items-center gap-2 text-sm text-slate-400">
+        <a href="katalog.html" class="hover:text-cyan-200 transition">Katalog</a>
+        <span>/</span>
+        <span class="text-slate-200">Detail Produk</span>
+      </div>
+
+      <h1 class="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight">
+        Detail <span class="text-cyan-300">Produk</span>
+      </h1>
+      <p class="mt-3 max-w-3xl text-slate-300 leading-relaxed">
+        Informasi lengkap mengenai produk MAUJERSEY—mulai dari bahan, opsi custom, hingga cara pemesanan.
+        Jika ingin tanya harga & estimasi produksi, silakan konsultasi langsung via WhatsApp.
+      </p>
+    </div>
+  </section>

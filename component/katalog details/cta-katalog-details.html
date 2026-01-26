@@ -1,0 +1,15 @@
+<!-- CTA -->
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="contact.html"
+            class="inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
+            Order via WhatsApp
+          </a>
+
+          <a href="katalog.html"
+            class="inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold border border-white/10 bg-white/5 hover:bg-white/10 transition text-slate-200">
+            ← Kembali ke Katalog
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>   

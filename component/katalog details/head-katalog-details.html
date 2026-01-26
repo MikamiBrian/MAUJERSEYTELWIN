@@ -1,0 +1,24 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail Produk - Jersey Futsal Custom | MAUJERSEY</title>
+
+  <meta name="description"
+    content="Detail produk Jersey Futsal Custom MAUJERSEY: bahan, size chart, opsi custom, estimasi produksi, dan cara pemesanan." />
+  <meta name="keywords" content="jersey futsal custom, jersey futsal, maujersey, sublim, dryfit, milano" />
+  <meta name="theme-color" content="#020617" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/logo.png" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">

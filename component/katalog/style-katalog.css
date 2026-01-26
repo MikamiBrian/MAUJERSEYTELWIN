@@ -1,0 +1,70 @@
+<style>
+    html,
+    body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden !important;
+    }
+
+    /* jangan pakai max-width di semua elemen (*) */
+    * {
+      box-sizing: border-box;
+    }
+
+    main,
+    header,
+    footer,
+    section,
+    div {
+      max-width: 100%;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .glow-text {
+      text-shadow:
+        0 0 6px rgba(34, 211, 238, .55),
+        0 0 20px rgba(34, 211, 238, .35);
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    /* Swiper bullets */
+    .swiper-pagination-bullet {
+      background: rgba(255, 255, 255, 0.35);
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: rgba(34, 211, 238, 0.95);
+      box-shadow: 0 0 12px rgba(34, 211, 238, .35);
+    }
+
+    .hero-bg-swiper .swiper-slide img {
+      transform: scale(1.06);
+      filter: blur(1px);
+    }
+
+    /* ✅ IMPORTANT: SWIPER jangan bikin overflow */
+    .swiper,
+    .swiper-wrapper,
+    .swiper-slide {
+      max-width: 100% !important;
+      overflow: hidden !important;
+    }
+
+    /* ✅ Pastikan card tidak pernah melebar */
+    .product-card {
+      width: 100% !important;
+      min-width: 0 !important;
+    }
+  </style>

@@ -1,0 +1,118 @@
+<style>
+    * {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .shadow-glow {
+      box-shadow: 0 0 20px rgba(34, 211, 238, 0.25);
+    }
+
+    .shadow-glow-soft {
+      box-shadow: 0 0 30px rgba(34, 211, 238, 0.18);
+    }
+
+    /* ===== Swiper Nav Custom (Desktop only) ===== */
+    .mj-nav {
+      width: 46px !important;
+      height: 46px !important;
+      border-radius: 9999px !important;
+      border: 1px solid rgba(255, 255, 255, 0.12) !important;
+      background: rgba(2, 6, 23, 0.55) !important;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+
+      box-shadow: 0 0 18px rgba(34, 211, 238, 0.18);
+      transition: transform 220ms ease, background 220ms ease, border-color 220ms ease;
+    }
+
+    .mj-nav:hover {
+      transform: scale(1.06);
+      border-color: rgba(34, 211, 238, 0.35) !important;
+      background: rgba(34, 211, 238, 0.08) !important;
+    }
+
+    /* matikan icon default swiper */
+    .mj-nav::after {
+      display: none !important;
+    }
+
+    /* isi ikon panah */
+    .mj-nav::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      display: block;
+      border-top: 2px solid rgba(255, 255, 255, 0.9);
+      border-right: 2px solid rgba(255, 255, 255, 0.9);
+    }
+
+    /* panah kiri */
+    .swiper-button-prev.mj-nav::before {
+      transform: rotate(-135deg);
+      margin-left: 2px;
+    }
+
+    /* panah kanan */
+    .swiper-button-next.mj-nav::before {
+      transform: rotate(45deg);
+      margin-right: 2px;
+    }
+
+    .fade-pop {
+      animation: fadePop 380ms ease;
+    }
+
+    @keyframes fadePop {
+      0% {
+        opacity: 0;
+        transform: scale(0.985);
+        filter: blur(2px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+      }
+    }
+
+    /* Thumbnail active */
+    .thumb-active {
+      border-color: rgba(34, 211, 238, 0.55) !important;
+      box-shadow: 0 0 16px rgba(34, 211, 238, 0.25);
+    }
+
+    /* Smooth accordion animation */
+    .accPanel {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 420ms ease, opacity 320ms ease, transform 320ms ease;
+      transform: translateY(-4px);
+    }
+
+    .accPanel.is-open {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .accIconRight {
+      transition: transform 260ms ease;
+    }
+
+    .accBtn[aria-expanded="true"] .accIconRight {
+      transform: rotate(180deg);
+    }
+
+    /* Left icon color change */
+    .leftIcon {
+      transition: color 220ms ease, background 220ms ease, border-color 220ms ease;
+    }
+
+    .accBtn[aria-expanded="true"] .leftIcon {
+      color: rgb(34 211 238);
+      border-color: rgba(34, 211, 238, 0.35);
+      background: rgba(34, 211, 238, 0.10);
+      box-shadow: 0 0 18px rgba(34, 211, 238, 0.25);
+    }
+  </style>

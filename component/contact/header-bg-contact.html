@@ -1,0 +1,68 @@
+<body class="font-display bg-slate-950 text-white overflow-x-hidden">
+
+  <!-- BG Effects -->
+  <div class="pointer-events-none fixed inset-0 -z-10">
+    <div class="absolute -top-48 left-1/2 h-[460px] w-[460px] -translate-x-1/2 rounded-full bg-cyan-500/20 blur-3xl">
+    </div>
+    <div class="absolute top-28 right-[-140px] h-[420px] w-[420px] rounded-full bg-blue-500/10 blur-3xl"></div>
+    <div class="absolute bottom-[-220px] left-[-160px] h-[520px] w-[520px] rounded-full bg-indigo-500/10 blur-3xl">
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-slate-950/60 backdrop-blur-xl">
+  <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-3">
+      <div
+        class="h-10 w-10 rounded-2xl border border-cyan-300/30 bg-cyan-300/10 shadow-glow flex items-center justify-center overflow-hidden">
+        <img src="assets/img/logo.png" alt="MAUJERSEY Logo" class="h-9 w-9 object-contain" />
+      </div>
+      <div class="leading-tight">
+        <p class="text-lg font-extrabold tracking-tight">MAUJERSEY</p>
+        <p class="text-xs text-slate-400 -mt-1">Custom Sport Apparel</p>
+      </div>
+    </a>
+
+    <!-- Desktop menu -->
+    <nav class="hidden md:flex items-center gap-8 text-sm text-slate-300">
+      <a href="index.html" class="hover:text-cyan-200 transition">Home</a>
+      <a href="katalog.html" class="hover:text-cyan-200 transition">Katalog</a>
+      <a href="berita.html" class="hover:text-cyan-200 transition">Berita</a>
+      <a href="contact.html" class="text-cyan-200 font-semibold">Contact</a>
+    </nav>
+
+    <!-- CTA -->
+    <div class="hidden md:flex gap-3">
+      <a href="admin/login.html"
+        class="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
+        Masuk
+      </a>
+    </div>
+
+    <!-- Mobile button -->
+    <button id="btnMobile"
+      class="md:hidden inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-3 py-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="md:hidden hidden border-t border-white/5 bg-slate-950/90 backdrop-blur-xl">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex flex-col gap-3 text-sm text-slate-300">
+      <a href="index.html" class="hover:text-cyan-200 transition">Home</a>
+      <a href="katalog.html" class="hover:text-cyan-200 transition">Katalog</a>
+      <a href="berita.html" class="hover:text-cyan-200 transition">Berita</a>
+      <a href="contact.html" class="text-cyan-200 font-semibold">Contact</a>
+
+      <a href="admin/login.html"
+        class="mt-2 inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
+        Masuk
+      </a>
+    </div>
+  </div>
+</header>

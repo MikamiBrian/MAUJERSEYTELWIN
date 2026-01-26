@@ -1,0 +1,149 @@
+<!-- KATALOG GRID -->
+    <section class="pb-16 mt-10">
+      <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- CARD 1 (LINK) -->
+        <a href="katalog-details.html" data-category="futsal"
+          class="product-card group glass rounded-3xl p-6 hover:border-cyan-300/30 hover:bg-cyan-300/5 transition block">
+
+          <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <div class="swiper productSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/Produk1.png" class="h-44 w-full object-cover" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/Produk1.png" class="h-44 w-full object-cover" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/Produk1.png" class="h-44 w-full object-cover" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div
+              class="absolute top-3 left-3 text-[11px] font-semibold px-3 py-1 rounded-full bg-cyan-300/15 border border-cyan-300/30 text-cyan-200">
+              Best Seller
+            </div>
+          </div>
+
+          <h3 class="mt-5 text-xl font-extrabold group-hover:text-cyan-200 transition">Jersey Futsal Custom</h3>
+          <p class="mt-2 text-sm text-slate-300">Full print sublim, adem & nyaman untuk indoor match.</p>
+
+          <div class="mt-4 flex items-center justify-between">
+            <p class="text-lg font-extrabold text-cyan-200">Rp 120.000</p>
+            <span class="text-xs text-slate-400 group-hover:text-cyan-200 transition">Lihat Detail →</span>
+          </div>
+        </a>
+
+        <!-- CARD 2 -->
+        <div data-category="basket"
+          class="product-card group glass rounded-3xl p-6 hover:border-cyan-300/30 hover:bg-cyan-300/5 transition">
+          <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <div class="swiper productSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/Produk2.png" class="h-44 w-full object-cover" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/Produk2.png" class="h-44 w-full object-cover" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/Produk2.png" class="h-44 w-full object-cover" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <h3 class="mt-5 text-xl font-extrabold group-hover:text-cyan-200 transition">Jersey Basket Custom</h3>
+          <p class="mt-2 text-sm text-slate-300">Breathable, cutting basket, bisa 1 set (atas + bawah).</p>
+
+          <div class="mt-4 flex items-center justify-between">
+            <p class="text-lg font-extrabold text-cyan-200">Rp 150.000</p>
+            <span class="text-xs text-slate-400">Preview</span>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div data-category="esport"
+          class="product-card group glass rounded-3xl p-6 hover:border-cyan-300/30 hover:bg-cyan-300/5 transition">
+          <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <div class="swiper productSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/Produk3.png" class="h-44 w-full object-cover" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/Produk3.png" class="h-44 w-full object-cover" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/Produk3.png" class="h-44 w-full object-cover" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <h3 class="mt-5 text-xl font-extrabold group-hover:text-cyan-200 transition">Jersey Esport Premium</h3>
+          <p class="mt-2 text-sm text-slate-300">Desain eksklusif, identitas tim makin solid & profesional.</p>
+
+          <div class="mt-4 flex items-center justify-between">
+            <p class="text-lg font-extrabold text-cyan-200">Rp 170.000</p>
+            <span class="text-xs text-slate-400">Preview</span>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div data-category="paket"
+          class="product-card group glass rounded-3xl p-6 hover:border-cyan-300/30 hover:bg-cyan-300/5 transition">
+          <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <div class="swiper productSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/Produk4.png" class="h-44 w-full object-cover" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/Produk4.png" class="h-44 w-full object-cover" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/Produk4.png" class="h-44 w-full object-cover" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <h3 class="mt-5 text-xl font-extrabold group-hover:text-cyan-200 transition">Paket Jersey 1 Tim</h3>
+          <p class="mt-2 text-sm text-slate-300">Lebih hemat untuk tim + bonus custom nama & nomor.</p>
+
+          <div class="mt-4 flex items-center justify-between">
+            <p class="text-lg font-extrabold text-cyan-200">Rp 110.000</p>
+            <span class="text-xs text-slate-400">Preview</span>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div data-category="sepeda"
+          class="product-card group glass rounded-3xl p-6 hover:border-cyan-300/30 hover:bg-cyan-300/5 transition">
+          <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <div class="swiper productSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/Produk5.png" class="h-44 w-full object-cover" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/Produk5.png" class="h-44 w-full object-cover" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/Produk5.png" class="h-44 w-full object-cover" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <h3 class="mt-5 text-xl font-extrabold group-hover:text-cyan-200 transition">Jersey Sepeda</h3>
+          <p class="mt-2 text-sm text-slate-300">Nyaman untuk gowes, ringan dan cepat menyerap keringat.</p>
+
+          <div class="mt-4 flex items-center justify-between">
+            <p class="text-lg font-extrabold text-cyan-200">Rp 140.000</p>
+            <span class="text-xs text-slate-400">Preview</span>
+          </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div data-category="badminton"
+          class="product-card group glass rounded-3xl p-6 hover:border-cyan-300/30 hover:bg-cyan-300/5 transition">
+          <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <div class="swiper productSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/Produk6.png" class="h-44 w-full object-cover" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/Produk6.png" class="h-44 w-full object-cover" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/Produk6.png" class="h-44 w-full object-cover" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <h3 class="mt-5 text-xl font-extrabold group-hover:text-cyan-200 transition">Jersey Badminton</h3>
+          <p class="mt-2 text-sm text-slate-300">Ringan, fleksibel, nyaman untuk rally cepat & pertandingan.</p>
+
+          <div class="mt-4 flex items-center justify-between">
+            <p class="text-lg font-extrabold text-cyan-200">Rp 130.000</p>
+            <span class="text-xs text-slate-400">Preview</span>
+          </div>
+        </div>
+
+      </div>

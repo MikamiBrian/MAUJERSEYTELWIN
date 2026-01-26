@@ -1,0 +1,92 @@
+<!-- CONTACT GRID -->
+    <section class="pb-16">
+      <div id="info" class="grid lg:grid-cols-2 gap-6">
+
+        <!-- INFO -->
+        <div class="glass rounded-3xl p-6 md:p-8">
+          <h2 class="text-2xl font-extrabold">Kontak Admin</h2>
+          <p class="mt-2 text-slate-300">Gunakan kontak berikut untuk konsultasi dan order.</p>
+
+          <div class="mt-6 grid gap-4">
+            <a href="#"
+              class="rounded-2xl border border-white/10 bg-white/5 p-5 hover:border-cyan-300/30 hover:bg-cyan-300/5 transition">
+              <p class="text-xs text-slate-400">WHATSAPP</p>
+              <p class="mt-1 text-lg font-bold text-cyan-200">+62 858-6497-8114</p>
+              <p class="mt-1 text-xs text-slate-400">Klik untuk chat langsung (opsional).</p>
+            </a>
+
+            <a href="#"
+              class="rounded-2xl border border-white/10 bg-white/5 p-5 hover:border-cyan-300/30 hover:bg-cyan-300/5 transition">
+              <p class="text-xs text-slate-400">EMAIL</p>
+              <p class="mt-1 font-semibold text-slate-100">tuangilbran@gmail.com</p>
+              <p class="mt-1 text-xs text-slate-400">Untuk kirim logo / referensi desain.</p>
+            </a>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <p class="text-xs text-slate-400">JAM OPERASIONAL</p>
+              <p class="mt-1 text-slate-100 font-semibold">Setiap Hari • 08.00 - 22.00 WIB</p>
+              <p class="mt-1 text-xs text-slate-400">Respon bisa lebih cepat saat jam aktif.</p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <p class="text-xs text-slate-400">PENGIRIMAN</p>
+              <p class="mt-1 text-slate-100 font-semibold">Seluruh Indonesia</p>
+              <p class="mt-1 text-xs text-slate-400">Packing aman & rapi.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div id="form" class="glass rounded-3xl p-6 md:p-8">
+          <h2 class="text-2xl font-extrabold">Form Konsultasi</h2>
+          <p class="mt-2 text-slate-300">Isi data singkat, admin akan balas secepatnya.</p>
+
+          <form class="mt-6 grid gap-4" onsubmit="return false;">
+            <div class="grid md:grid-cols-2 gap-4">
+              <input
+                class="w-full rounded-2xl bg-slate-950/40 border border-white/10 px-4 py-3 outline-none focus:border-cyan-300/50"
+                placeholder="Nama" />
+              <input
+                class="w-full rounded-2xl bg-slate-950/40 border border-white/10 px-4 py-3 outline-none focus:border-cyan-300/50"
+                placeholder="No WhatsApp" />
+            </div>
+
+            <input
+              class="w-full rounded-2xl bg-slate-950/40 border border-white/10 px-4 py-3 outline-none focus:border-cyan-300/50"
+              placeholder="Nama Tim / Komunitas (opsional)" />
+
+            <select
+              class="w-full rounded-2xl bg-slate-950/40 border border-white/10 px-4 py-3 outline-none focus:border-cyan-300/50">
+              <option selected disabled>Pilih kebutuhan</option>
+              <option>Jersey Futsal</option>
+              <option>Jersey Basket</option>
+              <option>Jersey Badminton</option>
+              <option>Jersey Sepeda</option>
+              <option>Jersey Esport</option>
+              <option>Paket Jersey Tim</option>
+              <option>Lainnya</option>
+            </select>
+
+            <textarea rows="6"
+              class="w-full rounded-2xl bg-slate-950/40 border border-white/10 px-4 py-3 outline-none focus:border-cyan-300/50"
+              placeholder="Tuliskan kebutuhan: jumlah pcs, size, deadline, bahan, desain..."></textarea>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <button type="button"
+                class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
+                Kirim Pesan
+              </button>
+
+              <a href="#"
+                class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-cyan-200 border border-cyan-300/40 hover:border-cyan-200 hover:bg-cyan-300/10 transition">
+                Chat WhatsApp
+              </a>
+            </div>
+
+            <p class="text-xs text-slate-400 text-center">
+              *Ini template frontend. Kalau mau, bisa aku buat versi otomatis kirim ke WhatsApp.
+            </p>
+          </form>
+        </div>
+
+      </div>

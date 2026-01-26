@@ -1,0 +1,15 @@
+<style>
+    /* Glow helpers */
+    .glow-text {
+      text-shadow:
+        0 0 6px rgba(34, 211, 238, .55),
+        0 0 20px rgba(34, 211, 238, .35);
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+  </style>

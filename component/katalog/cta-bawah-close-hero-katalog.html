@@ -1,0 +1,9 @@
+   <!-- CTA bawah -->
+      <div class="mt-10 flex justify-center">
+        <a href="contact.html"
+          class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
+          Konsultasi & Order Sekarang
+        </a>
+      </div>
+    </section>
+  </main>

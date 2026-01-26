@@ -1,0 +1,31 @@
+ <!-- PAGE HEADER -->
+  <main class="mx-auto max-w-6xl px-4">
+    <section class="py-16 md:py-20">
+      <div class="max-w-3xl">
+        <div
+          class="inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-xs text-cyan-200">
+          <span class="h-2 w-2 rounded-full bg-cyan-300 shadow-glow"></span>
+          Contact • Konsultasi • Order
+        </div>
+
+        <h1 class="mt-6 text-4xl md:text-5xl font-black tracking-tight leading-tight glow-text">
+          Hubungi <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-400">MAUJERSEY</span>
+        </h1>
+
+        <p class="mt-4 text-slate-300 leading-relaxed">
+          Silakan hubungi admin untuk tanya harga, estimasi produksi, atau request desain.
+          Kami fast response untuk kebutuhan order jersey custom.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#info"
+            class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
+            Lihat Kontak
+          </a>
+          <a href="#form"
+            class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-cyan-200 border border-cyan-300/40 hover:border-cyan-200 hover:bg-cyan-300/10 transition">
+            Isi Form
+          </a>
+        </div>
+      </div>
+    </section>

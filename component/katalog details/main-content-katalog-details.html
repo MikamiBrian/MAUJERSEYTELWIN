@@ -1,0 +1,246 @@
+<!-- CONTENT -->
+  <main class="mx-auto max-w-6xl px-4 pb-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+      <!-- LEFT: GALLERY -->
+      <section class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-4 md:p-6 shadow-glow-soft">
+
+        <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-slate-900/40">
+          <div class="swiper productSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/img/Produk1.png" alt="Produk 1"
+                  class="w-full h-[360px] md:h-[430px] object-cover select-none pointer-events-none" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/futsal11.png" alt="Produk 2"
+                  class="w-full h-[360px] md:h-[430px] object-cover select-none pointer-events-none" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/futsal22.png" alt="Produk 3"
+                  class="w-full h-[360px] md:h-[430px] object-cover select-none pointer-events-none" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/futsal33.png" alt="Produk 4"
+                  class="w-full h-[360px] md:h-[430px] object-cover select-none pointer-events-none" />
+              </div>
+            </div>
+
+            <!-- Nav (desktop only) -->
+            <button type="button" class="swiper-button-prev mj-nav hidden md:flex"></button>
+            <button type="button" class="swiper-button-next mj-nav hidden md:flex"></button>
+          </div>
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-transparent"></div>
+        </div>
+
+        <!-- thumbs -->
+        <div class="mt-4 grid grid-cols-4 gap-3">
+          <button type="button"
+            class="thumbBtn rounded-xl overflow-hidden border border-white/10 hover:border-cyan-300/40 transition"
+            data-index="0">
+            <img src="assets/img/Produk1.png" alt="Produk 1" class="w-full h-20 object-cover">
+          </button>
+          <button type="button"
+            class="thumbBtn rounded-xl overflow-hidden border border-white/10 hover:border-cyan-300/40 transition"
+            data-index="1">
+            <img src="assets/img/futsal11.png" alt="Produk 2" class="w-full h-20 object-cover">
+          </button>
+          <button type="button"
+            class="thumbBtn rounded-xl overflow-hidden border border-white/10 hover:border-cyan-300/40 transition"
+            data-index="2">
+            <img src="assets/img/futsal22.png" alt="Produk 3" class="w-full h-20 object-cover">
+          </button>
+          <button type="button"
+            class="thumbBtn rounded-xl overflow-hidden border border-white/10 hover:border-cyan-300/40 transition"
+            data-index="3">
+            <img src="assets/img/futsal33.png" alt="Produk 4" class="w-full h-20 object-cover">
+          </button>
+        </div>
+
+        <!-- badges -->
+        <div class="mt-5 flex flex-wrap gap-2">
+          <span class="px-3 py-1 rounded-full text-xs border border-cyan-300/25 bg-cyan-300/10 text-cyan-200">
+            Sublim Print
+          </span>
+          <span class="px-3 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-slate-200">
+            Dryfit / Milano
+          </span>
+          <span class="px-3 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-slate-200">
+            Custom Nama & Nomor
+          </span>
+          <span class="px-3 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-slate-200">
+            Logo Tim
+          </span>
+          <span class="px-3 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-slate-200">
+            Finishing Rapi
+          </span>
+        </div>
+      </section>
+
+            <!-- RIGHT: DETAILS -->
+      <section class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 md:p-7">
+        <div class="flex flex-wrap items-center gap-2">
+          <span
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-300/15 text-cyan-200 border border-cyan-300/20">
+            Jersey Olahraga
+          </span>
+
+          <span
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs bg-white/5 text-slate-200 border border-white/10">
+            ⏱ Estimasi 5–10 Hari
+          </span>
+
+          <span
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs bg-white/5 text-slate-200 border border-white/10">
+            ✅ Custom Order
+          </span>
+        </div>
+
+        <h2 class="mt-4 text-3xl font-extrabold tracking-tight">
+          Jersey Futsal Custom
+        </h2>
+
+        <p class="mt-3 text-slate-300 leading-relaxed">
+          Jersey Futsal Custom MAUJERSEY dibuat dengan bahan adem dan ringan untuk aktivitas indoor yang intens.
+          Menggunakan metode print sublim berkualitas tinggi agar warna tajam, tidak mudah pudar, serta detail desain
+          lebih presisi.
+        </p>
+
+        <div class="mt-4">
+          <a href="contact.html" class="text-cyan-200 hover:text-cyan-100 transition underline underline-offset-4">
+            Konsultasi & Order via WhatsApp
+          </a>
+        </div>
+
+         <!-- ACCORDION -->
+        <div class="mt-6 space-y-3">
+
+          <!-- item 1 -->
+          <div class="rounded-2xl border border-white/10 overflow-hidden">
+            <button type="button"
+              class="accBtn w-full px-4 py-4 flex items-center justify-between text-left bg-slate-900/30 hover:bg-slate-900/40 transition"
+              data-target="acc1" aria-expanded="false">
+              <div class="flex items-center gap-3">
+                <span
+                  class="leftIcon w-10 h-10 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                    <path d="M9 12h6" />
+                    <path d="M9 16h6" />
+                  </svg>
+                </span>
+                <span class="text-lg font-bold">Spesifikasi Produk</span>
+              </div>
+
+              <span class="accIconRight text-slate-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </span>
+            </button>
+
+            <div id="acc1" class="accPanel px-4 pb-4 pt-0 text-slate-300">
+              <div class="pt-3">
+                <ul class="space-y-2 text-sm">
+                  <li><span class="text-white font-semibold">Jenis:</span> Jersey Futsal Custom</li>
+                  <li><span class="text-white font-semibold">Printing:</span> Full Print Sublim</li>
+                  <li><span class="text-white font-semibold">Opsi Custom:</span> Nama, Nomor, Logo Tim, Sponsor</li>
+                  <li><span class="text-white font-semibold">Ukuran:</span> S – XXXL (tersedia size chart)</li>
+                  <li><span class="text-white font-semibold">Minimal Order:</span> Fleksibel (satuan / tim)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div class="rounded-2xl border border-white/10 overflow-hidden">
+            <button type="button"
+              class="accBtn w-full px-4 py-4 flex items-center justify-between text-left bg-slate-900/30 hover:bg-slate-900/40 transition"
+              data-target="acc2" aria-expanded="false">
+              <div class="flex items-center gap-3">
+                <span
+                  class="leftIcon w-10 h-10 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 3 3 21" />
+                    <path d="M16 3 3 16" />
+                    <path d="M5 11 3 13" />
+                    <path d="M9 7 7 9" />
+                    <path d="M13 5 11 7" />
+                    <path d="M19 5 17 7" />
+                  </svg>
+                </span>
+                <span class="text-lg font-bold">Size Chart (Panduan Ukuran)</span>
+              </div>
+
+              <span class="accIconRight text-slate-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </span>
+            </button>
+
+            <div id="acc2" class="accPanel px-4 pb-4 pt-0 text-slate-300">
+              <div class="pt-3">
+                <p class="text-sm leading-relaxed">
+                  Gunakan panduan ukuran di bawah ini agar size jersey lebih pas. Jika ragu, disarankan naik 1 size untuk
+                  kenyamanan saat bermain.
+                </p>
+                <ul class="mt-3 space-y-2 text-sm">
+                  <li><span class="text-white font-semibold">S</span>: badan slim / remaja</li>
+                  <li><span class="text-white font-semibold">M</span>: standar remaja/dewasa</li>
+                  <li><span class="text-white font-semibold">L</span>: standar dewasa</li>
+                  <li><span class="text-white font-semibold">XL</span>: fit lebih longgar</li>
+                  <li><span class="text-white font-semibold">XXL–XXXL</span>: big size</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 3 -->
+          <div class="rounded-2xl border border-white/10 overflow-hidden">
+            <button type="button"
+              class="accBtn w-full px-4 py-4 flex items-center justify-between text-left bg-slate-900/30 hover:bg-slate-900/40 transition"
+              data-target="acc3" aria-expanded="false">
+              <div class="flex items-center gap-3">
+                <span
+                  class="leftIcon w-10 h-10 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 3h5v5" />
+                    <path d="M21 3l-6 6" />
+                    <rect x="3" y="7" width="6" height="6" rx="1" />
+                    <rect x="15" y="15" width="6" height="6" rx="1" />
+                    <path d="M6 13v4a2 2 0 0 0 2 2h7" />
+                  </svg>
+                </span>
+                <span class="text-lg font-bold">Alur Pemesanan</span>
+              </div>
+
+              <span class="accIconRight text-slate-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </span>
+            </button>
+
+            <div id="acc3" class="accPanel px-4 pb-4 pt-0 text-slate-300">
+              <div class="pt-3">
+                <ol class="space-y-2 text-sm list-decimal list-inside">
+                  <li>Konsultasi kebutuhan (jenis, jumlah pcs, deadline).</li>
+                  <li>Kirim referensi desain atau request desain dari MAUJERSEY.</li>
+                  <li>Revisi desain sampai fix.</li>
+                  <li>Produksi + quality control.</li>
+                  <li>Pengiriman ke alamat pemesan.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+        </div>

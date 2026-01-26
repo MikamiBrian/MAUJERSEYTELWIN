@@ -1,0 +1,43 @@
+<!-- FOOTER -->
+<footer class="border-t border-white/5">
+  <div
+    class="mx-auto max-w-6xl px-4 py-10 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
+
+    <p class="text-sm text-slate-400">
+      © <span class="text-white font-semibold">MAUJERSEY</span>. All Rights Reserved.
+    </p>
+
+    <!-- SOCIAL -->
+    <div class="flex items-center gap-3">
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@username" target="_blank" rel="noopener"
+        class="group inline-flex items-center justify-center h-10 w-10 rounded-full border border-white/10 bg-white/5 hover:bg-cyan-300/10 hover:border-cyan-300/30 transition">
+        <svg class="h-5 w-5 text-slate-200 group-hover:text-cyan-200 transition" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.5 6.06c-1.36-.87-2.25-2.34-2.34-4.06h-3.1v14.2a2.6 2.6 0 1 1-2.23-2.58v-3.2a5.8 5.8 0 1 0 5.33 5.78V9.18c1.2.86 2.67 1.37 4.34 1.37V7.5c-.75 0-1.46-.15-2.01-.44z" />
+        </svg>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://instagram.com/username" target="_blank" rel="noopener"
+        class="group inline-flex items-center justify-center h-10 w-10 rounded-full border border-white/10 bg-white/5 hover:bg-cyan-300/10 hover:border-cyan-300/30 transition">
+        <svg class="h-5 w-5 text-slate-200 group-hover:text-cyan-200 transition" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+          <path d="M16 11.37a4 4 0 1 1-7.75 1.2 4 4 0 0 1 7.75-1.2z"></path>
+          <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+        </svg>
+      </a>
+
+      <!-- Facebook -->
+      <a href="https://facebook.com/username" target="_blank" rel="noopener"
+        class="group inline-flex items-center justify-center h-10 w-10 rounded-full border border-white/10 bg-white/5 hover:bg-cyan-300/10 hover:border-cyan-300/30 transition">
+        <svg class="h-5 w-5 text-slate-200 group-hover:text-cyan-200 transition" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5v1.9H17l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</footer>
