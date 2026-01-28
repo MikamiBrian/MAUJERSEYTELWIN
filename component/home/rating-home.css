@@ -1,0 +1,18 @@
+.rating-half {
+  direction: rtl;
+}
+
+.rating-half input {
+  display: none;
+}
+
+.rating-half label {
+  width: 26px;
+  cursor: pointer;
+  font-size: 26px;
+  color: #334155;
+}
+
+.rating-half input:checked ~ label {
+  color: #facc15;
+}

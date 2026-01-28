@@ -1,0 +1,20 @@
+.btn-primary {
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  background: #67e8f9;
+  color: #020617;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn-primary:hover {
+  background: #22d3ee;
+}
+
+.card-hover {
+  transition: transform .3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+}

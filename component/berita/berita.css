@@ -1,0 +1,4 @@
+.news-card img {
+  height: 13rem;
+  object-fit: cover;
+}
