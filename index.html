@@ -33,6 +33,11 @@
   </script>
 
   <style>
+    html, body{
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
     .glow-text {
       text-shadow:
         0 0 6px rgba(34, 211, 238, .55),
@@ -86,7 +91,7 @@
     <div class="hidden md:flex gap-3">
       <a href="contact.html"
         class="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold text-slate-950 bg-cyan-300 hover:bg-cyan-200 transition shadow-glow">
-        Login
+        Masuk
       </a>
     </div>
 
@@ -119,7 +124,7 @@
   <!-- HERO -->
   <main class="mx-auto max-w-6xl px-4">
     <section class="py-16 md:py-24">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
         <!-- Left -->
         <div>
@@ -172,7 +177,7 @@
         </div>
 
   <!-- RIGHT CARD -->
-  <div class="relative max-w-md mx-auto glass rounded-3xl p-6 shadow-glow2">
+  <div class="relative w-full   max-w-md mx-auto glass rounded-3xl p-6 shadow-glow2 overflow-hidden">
     <div class="rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-white/10 p-6">
 
       <div class="flex items-center justify-between mb-4">
@@ -181,7 +186,7 @@
       </div>
 
       <!-- Swiper utama -->
-      <div class="swiper mySwiperMain h-60 md:h-72 lg:h-80 mb-4">
+      <div class="swiper mySwiperMain h-60 md:h-72 lg:h-80 mb-4 overflow-hidden">
         <div class="swiper-wrapper">
           <div class="swiper-slide flex items-center justify-center">
             <img src="assets/img/Produk1.png" alt="Jersey 1" class="h-full object-contain rounded-2xl">
@@ -196,16 +201,16 @@
       </div>
 
       <!-- Thumbnail Swiper -->
-      <div class="swiper mySwiperThumbs h-16 md:h-20">
+      <div class="swiper mySwiperThumbs h-16 md:h-20 w-full overflow-hidden">
         <div class="swiper-wrapper">
           <div class="swiper-slide h-16 md:h-20 p-1">
-            <img src="assets/img/Produk1.png" alt="Thumb 1" class="h-full w-full object-contain rounded-lg cursor-pointer">
+            <img src="assets/img/Produk1.png" alt="Thumb 1" class="max-w-full object-contain rounded-lg cursor-pointer">
           </div>
           <div class="swiper-slide h-16 md:h-20 p-1">
-            <img src="assets/img/Produk2.png" alt="Thumb 2" class="h-full w-full object-contain rounded-lg cursor-pointer">
+            <img src="assets/img/Produk2.png" alt="Thumb 2" class="max-w-full object-contain rounded-lg cursor-pointer">
           </div>
           <div class="swiper-slide h-16 md:h-20 p-1">
-            <img src="assets/img/Produk3.png" alt="Thumb 3" class="h-full w-full object-contain rounded-lg cursor-pointer">
+            <img src="assets/img/Produk3.png" alt="Thumb 3" class="max-w-full object-contain rounded-lg cursor-pointer">
           </div>
         </div>
       </div>
@@ -299,7 +304,7 @@
         <p class="mt-3 text-slate-300">Mulai dari desain sampai produksi. Bisa satuan atau tim/komunitas.</p>
       </div>
 
-      <div class="mt-10 grid md:grid-cols-3 gap-6">
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-6">
         <div class="glass rounded-3xl p-6">
           <p class="text-sm text-cyan-200 font-bold">01</p>
           <h3 class="mt-3 text-xl font-extrabold">Custom Desain</h3>
@@ -383,7 +388,7 @@
     </div>
 
     <div class="mt-10 max-w-6xl mx-auto relative">
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper overflow-hidden">
         <div class="swiper-wrapper">
 
           <!-- Testimoni 1 -->
@@ -595,6 +600,3 @@
 </body>
 
 </html>
-
-
-
